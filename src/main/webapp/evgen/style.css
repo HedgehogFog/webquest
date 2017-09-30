@@ -1,0 +1,152 @@
+/*Атрибут это тег(width, height, padding, color, border и т.п.) находящийся в классе, определяет параметры страницы*/
+/*Классы задаются через .your_class{}, атрибут class*/
+/*Есть еще, что-то вроде класса, но задается через #your_class{}, атрибут id*/
+
+.main { 
+    background-color: #EAEAEA;
+    width: 240px; /*Ширина*/
+    height: 640px; /*Высота*/
+    padding: 10px; /*Отступ по диагонали от верхнего левого угла*/
+    padding-right: 0px; /*Отступ от правого края экрана до объекта*/
+    padding-top: 5px; /*Отступ от верха экрана до объекта*/
+    border: solid 0px grey; /*Задает параметры, толщину и цвет обрамления вокруг объекта*/
+    float: left; /*Расположение объекта на станице*/
+    margin-top: -40px;
+    margin-left: -20px;
+}
+    
+.leftbox{
+    color:#322050;/*Определяет цвет чего-нибудь*/
+    font-family:CENTURY GOTHIC; /*Задает шрифт*/
+    }
+
+body{ 
+    background: #f9f9f9;/*D2E9F1Фоновое изображение, чтобы вместо изображения был монотонный фон нужно вместо url(img/fon.jpg) написать                                цвет через #ffffff  или просто white, red и т.д. */
+    background-repeat:no-repeat; /*Если у вас изображение! Определяет будет ли повторяться или не повторяться изображение*/
+    background-attachment:fixed; /* Пиши это и твое изображение будет неподвижно на фоне страницы (именно fixed)*/
+    background-position:center; /* Расположение изображения */
+    background-size: 100%; /*Пиши это и твое изображение заполнит весь фон страницы*/
+    }
+
+a{
+    text-decoration: none; /* Убирает подчеркивание для ссылок */
+    font-family:CENTURY GOTHICF; /*Задает шрифт*/
+    }
+
+#table{
+    border-spacing: 0px 0px;
+    width: 1050px;
+    border-color: black;
+    border-bottom-color: black;
+    border: 1px;
+}
+        
+a:hover{ 
+    text-decoration: underline; /* Добавляем подчеркивание при наведении курсора на ссылку */
+    }
+a:link{
+    color: #F20217; /*Цвет ссылки*/
+    }
+a:visited{
+    color: #F20217; /*Цвет посещенной ссылки*/
+    }
+a:active{
+    color: #744E4E; /*Цвет ссылки при нажатии на нее*/
+    }
+
+.znam{
+    color:#F20217;
+    font-family: CENTURY GOTHIC;
+    }
+
+.days{
+    color: white;
+}
+
+.spisok_gr{
+    color:auto;
+    font-size: 20px; /*Высота текста*/
+    font-family:CENTURY GOTHIC; /*Задает шрифт*/
+    position:relative; /*Какая-то позиция :)*/
+    bottom:auto;/*Отступ снизу*/
+    top: 20px; /*Отступ сверху*/
+    left: 0px; /*Отступ слева*/
+    right: 0px;/*Отступ справа*/
+    }
+
+.rasp_zv{
+    color:auto;
+    font-size: 20px; /*Высота текста*/
+    font-family:CENTURY GOTHIC; /*Задает шрифт*/
+    bottom:auto;/*Отступ снизу*/
+    top: 20px; /*Отступ сверху*/
+    left: auto; /*Отступ слева*/
+    right: 200px;/*Отступ справа*/
+    text-align: center;
+}
+.zagolovki{
+    font-family: CENTURY GOTHIC;
+    font-size: 32px;
+    color: black;
+    text-align: center; /*Расположение текста*/
+}
+
+.center{
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+
+.round2 {               /* Округление картинки */
+    width: 350px;
+    border-radius: 25px; /* Радиус скругления */
+    border: 2px solid white; /* Параметры рамки */
+    /* box-shadow: 0 0 2px #666; /* Параметры тени */
+    /* box-shadow: 0 0 0 2px white, 0 0 2px #333; /* Параметры теней для Chrome */
+   }
+
+.round {               /* Округление картинки */
+    border-radius: 25px; /* Радиус скругления */
+    border: 2px solid white; /* Параметры рамки */
+    /* box-shadow: 0 0 2px #666; /* Параметры тени */
+    /* box-shadow: 0 0 0 2px white, 0 0 2px #333; /* Параметры теней для Chrome */
+   }
+
+
+table {
+    font-family: CENTURY GOTHIC;
+    margin: auto; /* Выравниваем таблицу по центру окна  */
+    border: none; 
+    color: black;
+}
+
+th{
+    background-color: #00843B;
+}
+
+.fon_table{
+    background-color: #FFFFFF;
+}
+
+.fon_table2{
+    background-color: #F1F1F1;
+}
+
+
+
+
+.right_verx_t{
+    border-radius: 0 2px 0 0;
+}
+
+.left_verx_t{
+    border-radius: 2px 0 0 0;
+}
+
+.right_niz_t{
+    border-radius: 0 0 2px 0;
+}
+
+.left_niz_t{
+    border-radius: 0 0 0 2px;
+}
