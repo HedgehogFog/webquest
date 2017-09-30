@@ -10,8 +10,8 @@
         <li><a href="#">Главная</a></li>
         <li><a href="#">О нас</a>
             <ul>
-                <li><a href="">Разработчики</a></li>
-                <li><a href="">История</a></li>
+                <li><a href="">Ваниль топ</a></li>
+                <li><a href="">В общем</a></li>
             </ul>
         </li>
         <li><a href="#">Контакты</a></li>
