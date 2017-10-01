@@ -10,7 +10,7 @@
 <p class="texmaintzag" >SELECT MODE</p>
 <table>
     <tr>
-        <td><a href="Do%20u.html"><img width="246" height="368" src="img/piximon.jpg"> </a></td>
+        <td><a href="DoU.html"><img width="246" height="368" src="img/piximon.jpg"> </a></td>
         <td><a href="love2.jpg"><img width="246" height="368" src="img/b.jpg"> </a></td>
     </tr>
     <tr>
