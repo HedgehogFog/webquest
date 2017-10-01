@@ -1,21 +1,23 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <%@ page contentType="text/html;charset=utf-8" %>
-    <link href="main.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>title</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<nav role='navigation'>
-    <ul>
-        <li><a href="#">Главная</a></li>
-        <li><a href="#">О нас</a>
-            <ul>
-                <li><a href="">Ваниль топ</a></li>
-                <li><a href="">В общем</a></li>
-            </ul>
-        </li>
-        <li><a href="#">Контакты</a></li>
-    </ul>
-</nav>
+
+<p class="texmaintzag" >SELECT MODE</p>
+<table>
+    <tr>
+        <td><a href="Do%20u.html"><img width="246" height="368" src="img/piximon.jpg"> </a></td>
+        <td><a href="love2.jpg"><img width="246" height="368" src="img/b.jpg"> </a></td>
+    </tr>
+    <tr>
+        <td class="textzag"><a href="DoU.html">CLASSIC<br>MODE </a></td>
+        <td class="textzag"><a href="img/love2.jpg">POP<br>MODE </a></td>
+    </tr>
+</table>
+<img id="nepo" src="img\hepo.png">
 </body>
 </html>
