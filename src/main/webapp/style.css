@@ -1,9 +1,14 @@
 body{
     background-color: #000000;
 }
-h1{
+
+@font-face {
     font-family: pixelFont;
     src: url(fonts/pixelFont.ttf);
+}
+
+h1{
+    font-family: pixelFont;
     color: #FFFFFF;
     font-size: 40pt;
 }
