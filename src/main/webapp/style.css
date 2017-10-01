@@ -1,14 +1,8 @@
 body{
     background-color: #000000;
 }
-
-@font-face {
-    font-family: pixelFont;
-    src: url(fonts/pixelFont.ttf);
-}
-
 h1{
-    font-family: pixelFont;
+    font-family: Dpix_8pt;
     color: #FFFFFF;
     font-size: 40pt;
 }
@@ -17,6 +11,7 @@ h1{
     right: 0;
     bottom: 0;
 }
+/* Do u */
 .ggscary{
     margin: auto;
     margin-top: 14%;
@@ -25,7 +20,7 @@ h1{
 }
 .ggplay{
     margin: auto;
-    font-family: pixelFont;
+    font-family: Dpix_8pt;
     color: #FFFFFF;
     font-size: 25pt;
     text-align: center;
@@ -33,7 +28,7 @@ h1{
 }
 .ggno{
     float: right;
-    font-family: pixelFont;
+    font-family: Dpix_8pt;
     color: #FFFFFF;
     font-size: 25pt;
     text-decoration: underline;
@@ -42,17 +37,18 @@ h1{
 .ggyes{
     margin-left: 9px;
     float: left;
-    font-family: pixelFont;
+    font-family: Dpix_8pt;
     color: #FFFFFF;
     font-size: 25pt;
     text-decoration: underline;
 }
+/* Classic mode*/
 .classicmode{
     margin: auto;
     margin-top: 5%;
     width: 80%;
     height: 80%;
-    font-family: pixelFont;
+    font-family: Dpix_8pt;
     color: #FFFFFF;
     font-size: 25pt;
 }
@@ -80,12 +76,12 @@ h1{
 .classicmodetuned{
     text-align: center;}
 .classicmodeguesstablepos{
-margin-top: 4%;
-margin-left: 22%;
+    margin-top: 4%;
+    text-align: center;
 }
 .classicmodeguesstablepos2{
     margin-top: 4%;
-    margin-left: 34%;
+    text-align: center;
 }
 .guesstable{
     width: 40px;
@@ -94,7 +90,7 @@ margin-left: 22%;
     border: none;
     outline:none;
     text-align: center;
-    font-family: pixelFont;
+    font-family: Dpix_8pt;
     color: #FFFFFF;
     font-size: 30pt;
     text-transform: uppercase;
@@ -106,25 +102,57 @@ margin-left: 22%;
     border: none;
     outline:none;
     text-align: center;
-    font-family: pixelFont;
+    font-family: Dpix_8pt;
     color: #FFFFFF;
     font-size: 30pt;
     text-transform: uppercase;
 }
+/* /*Picture Mode*/
+.picturemode {
+    margin: auto;
+    width: 80%;
+    height: 80%;
+    font-family: Dpix_8pt;
+    color: #FFFFFF;
+    font-size: 18pt;
+}
+.picturemodzag{
+    margin-top: 4%;
+    font-size: 18pt;
+    text-align: center;}
+.picturemodeguesstableposs{
+    margin-top: 4%;
+    text-align: center;
+}
+.framediv{
+    margin-top: 2%;
+    text-align: center;
+}
+.framy{
+    width: 600px;
+    height: 332px;
+    margin: auto;
+    border: none;
+}
+.frameworklinks{
+    text-align: center;
+    font-size: 14pt;
+}
+/*Center text*/
 .texmaintzag{
-    font-family: pixelFont;
+    font-family: Dpix_8pt;
     color: #FFFFFF;
     font-size: 30pt;
     text-align: center;
 }
 .textzag{
-    font-family: pixelFont;
+    font-family: Dpix_8pt;
     color: #FFFFFF;
     font-size: 25pt;
     text-align: center;
     text-decoration: none;
 }
-
+/*Index stuff*/
 table {
      /* Выравниваем таблицу по центру окна  */
     border: 0; /* Рамка вокруг таблицы */
@@ -133,7 +161,7 @@ table {
     border-spacing: 0;
     padding: 0;
     margin: auto;
-    margin-top: 4%;
+    margin-top: 9%;
 }
 td {
     padding: 1px; /* Поля вокруг текста */
