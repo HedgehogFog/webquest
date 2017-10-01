@@ -2,7 +2,8 @@ body{
     background-color: #000000;
 }
 h1{
-    font-family: Dpix_8pt;
+    font-family: pixelFont;
+    src: url(fonts/pixelFont.ttf);
     color: #FFFFFF;
     font-size: 40pt;
 }
