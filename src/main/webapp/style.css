@@ -20,7 +20,7 @@ h1{
 }
 .ggplay{
     margin: auto;
-    font-family: Dpix_8pt;
+    font-family: pixelFont;
     color: #FFFFFF;
     font-size: 25pt;
     text-align: center;
@@ -28,7 +28,7 @@ h1{
 }
 .ggno{
     float: right;
-    font-family: Dpix_8pt;
+    font-family: pixelFont;
     color: #FFFFFF;
     font-size: 25pt;
     text-decoration: underline;
@@ -37,7 +37,7 @@ h1{
 .ggyes{
     margin-left: 9px;
     float: left;
-    font-family: Dpix_8pt;
+    font-family: pixelFont;
     color: #FFFFFF;
     font-size: 25pt;
     text-decoration: underline;
@@ -47,7 +47,7 @@ h1{
     margin-top: 5%;
     width: 80%;
     height: 80%;
-    font-family: Dpix_8pt;
+    font-family: pixelFont;
     color: #FFFFFF;
     font-size: 25pt;
 }
@@ -89,7 +89,7 @@ margin-left: 22%;
     border: none;
     outline:none;
     text-align: center;
-    font-family: Dpix_8pt;
+    font-family: pixelFont;
     color: #FFFFFF;
     font-size: 30pt;
     text-transform: uppercase;
@@ -101,19 +101,19 @@ margin-left: 22%;
     border: none;
     outline:none;
     text-align: center;
-    font-family: Dpix_8pt;
+    font-family: pixelFont;
     color: #FFFFFF;
     font-size: 30pt;
     text-transform: uppercase;
 }
 .texmaintzag{
-    font-family: Dpix_8pt;
+    font-family: pixelFont;
     color: #FFFFFF;
     font-size: 30pt;
     text-align: center;
 }
 .textzag{
-    font-family: Dpix_8pt;
+    font-family: pixelFont;
     color: #FFFFFF;
     font-size: 25pt;
     text-align: justify;
