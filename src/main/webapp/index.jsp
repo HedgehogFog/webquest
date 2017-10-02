@@ -22,14 +22,9 @@
     if (!isHave) {
         current.setCoins(10);
         Data.getInstance().getUsers().add(current);
-        %>
-        Add
-    <%
-    }else {
-
-        %>
-        Don`t Add
-<%
+        System.out.println("Add");
+    } else{
+        System.out.println("NOT ADD");
     }
 %>
 <p class="texmaintzag" >SELECT MODE</p>
