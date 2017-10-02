@@ -1,6 +1,12 @@
 body{
     background-color: #000000;
 }
+
+@font-face {
+    font-family: Dpix_8pt;
+    src: url(fonts/pixelFont.ttf);
+}
+
 h1{
     font-family: Dpix_8pt;
     color: #FFFFFF;
