@@ -1,6 +1,10 @@
 package data;
 
+import model.User;
+
+import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.List;
 
 /**
  * Created by hedgehog on 11.09.17.
@@ -16,19 +20,9 @@ public class Data
     private Data() {
     }
 
-    private int length = 1;
-    private int lastUpdate = 14;
-    public int getLength() {
-        Calendar calendar = Calendar.getInstance();
-        if (calendar.get(Calendar.HOUR_OF_DAY) == lastUpdate){
-            length++;
-            if (++lastUpdate >= 25)
-                lastUpdate = 0;
-        }
-        return length;
-    }
+    private List<User> users = new ArrayList<User>();
 
-    public void setLength(int length) {
-        this.length = length;
+    public List<User> getUsers() {
+        return users;
     }
 }
