@@ -1,11 +1,12 @@
-body{
-    background-color: #000000;
-}
-
 @font-face {
     font-family: pixelFont;
     src: url(fonts/pixelFont.ttf);
 }
+
+body{
+    background-color: #000000;
+}
+
 
 h1{
     font-family: pixelFont;
