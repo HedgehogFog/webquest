@@ -14,6 +14,7 @@
     User current = new User(request.getRemoteAddr());
     boolean isHave = false;
     for (User user : Data.getInstance().getUsers()) {
+        System.out.println(current.getIpAddress() + "==" + user.getIpAddress());
         if (user.equals(current.getIpAddress())){
             isHave = true;
             break;
