@@ -22,6 +22,14 @@ public class Data
 
     private List<User> users = new ArrayList<User>();
 
+	public User getUser(String ip) {
+		for (int i = 0; i < users.size(); i++)
+			if (users[i].getIpAddress().equals(ip))
+				return users[i];
+			
+		return null;
+	}
+	
     public List<User> getUsers() {
         return users;
     }

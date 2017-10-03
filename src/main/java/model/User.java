@@ -12,6 +12,10 @@ public class User {
     public User(String ipAddress){
         this.ipAddress = ipAddress;
     }
+	
+	public int getCoins() {
+		return coins;
+	}
 
     public void setCoins(int coins) {
         this.coins = coins;
