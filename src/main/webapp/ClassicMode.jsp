@@ -32,7 +32,7 @@
     </div>
 </div>
     <div class="classicmodecomposer">
-    <div class="classicmodetunetext2"> <p><a class="classicmodelinks" href="">Guess composer</a> </p></div>
+    <div class="classicmodetunetext2"> <p><a class="classicmodelinks" href="indev.html">Guess composer</a> </p></div>
         <div class="classicmodeguesstablepos2">
             <form>
                 <input maxlength="1" class="guesstable">
