@@ -38,6 +38,7 @@
         <td class="textzag"><a href="img/love2.jpg">POP<br>MODE </a></td>
     </tr>
 </table>
+<p> Ваниль Ink </p>
 <p lang="ru" title="Научно-исследовательский институт имени По (Эдгара Аллана По)"> <img id="nepo" src="img\hepo.png">  </p>
 </body>
 </html>
