@@ -24,8 +24,8 @@ public class Data
 
 	public User getUser(String ip) {
 		for (int i = 0; i < users.size(); i++)
-			if (users[i].getIpAddress().equals(ip))
-				return users[i];
+			if (users.get(i).getIpAddress().equals(ip))
+				return users.get(i);
 			
 		return null;
 	}
