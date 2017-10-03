@@ -46,32 +46,14 @@ h1{
     float: left;
     font-family: pixelFont;
     color: #FFFFFF;
-    font-size: 20pt;
+    font-size: 25pt;
     text-decoration: underline;
 }
 /* Classic mode*/
-.classicmodebitgallery{
-    float: right;
-    width: 10%;
-}
-.bitoktext{
-    text-align: center;
-    font-size: 20pt;
-    font-family: pixelFont;
-    color: #ffdf01;
-}
-.bitoktextlinks{
-    font-size: 15pt;
-    font-family: pixelFont;
-    color: #ffdf01;
-}
-.bitokpos{
-    margin-top: 3%;
-}
 .classicmode{
     margin: auto;
     margin-top: 5%;
-    width: 100%;
+    width: 80%;
     height: 80%;
     font-family: pixelFont;
     color: #FFFFFF;
@@ -93,7 +75,7 @@ h1{
 }
 .classicmodetunetext2{
     text-align: center;
-    margin-top: 10%;
+    margin-top: 13%;
 }
 .classicmodelinks{
     text-decoration: underline;
@@ -101,11 +83,11 @@ h1{
 .classicmodetuned{
     text-align: center;}
 .classicmodeguesstablepos{
-    margin-top: 3%;
+    margin-top: 4%;
     text-align: center;
 }
 .classicmodeguesstablepos2{
-    margin-top: 3%;
+    margin-top: 4%;
     text-align: center;
 }
 .guesstable{
@@ -135,7 +117,7 @@ h1{
 /* /*Picture Mode*/
 .picturemode {
     margin: auto;
-    width: 100%;
+    width: 80%;
     height: 80%;
     font-family: pixelFont;
     color: #FFFFFF;
