@@ -50,6 +50,24 @@ h1{
     text-decoration: underline;
 }
 /* Classic mode*/
+.classicmodebitgallery{
+    float: right;
+    width: 10%;
+}
+.bitoktext{
+    text-align: center;
+    font-size: 20pt;
+    font-family: pixelFont;
+    color: #ffdf01;
+}
+.bitoktextlinks{
+    font-size: 15pt;
+    font-family: pixelFont;
+    color: #ffdf01;
+}
+.bitokpos{
+    margin-top: 3%;
+}
 .classicmode{
     margin: auto;
     margin-top: 5%;
