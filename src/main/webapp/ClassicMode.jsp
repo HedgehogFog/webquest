@@ -9,7 +9,7 @@
 <body>
 <div class="classicmode">
     <div class="classicmodebitgallery">
-        <div class="bitokpos"> <p class="bitoktext"> <%= Data.getInstance().getUser(request.getRemoteAddr()).getCoins() %> <img src="img/bit.png"></p></div>
+        <div class="bitokpos"> <p class="bitoktext"> <%= (Data.getInstance().getUser(request.getRemoteAddr()) == null) ? 13 : Data.getInstance().getUser(request.getRemoteAddr()).getCoins() %> <img src="img/bit.png"></p></div>
     </div>
 <div class="classicmodetune">
 <div class="classicmodetunetext"> <p> Great! <a class="classicmodelinks" href="Picturemode.html">Guess that tune</a> <img  width="110px" height="110px" src="img/sha.jpg"></p></div>
