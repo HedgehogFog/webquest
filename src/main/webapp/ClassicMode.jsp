@@ -28,6 +28,14 @@
             <input maxlength="1" class="guesstable">
             <input maxlength="1" class="guesstable">
             <input maxlength="1" class="guesstable">
+            <script>
+                var input = document.body.getElementsByClassName("classicmodetuned")
+
+                input.oninput = function() {
+                    if (input.value == "A")
+                        document.getElementById('result').innerHTML = input.value;
+                };
+            </script>
         </form>
     </div>
 </div>
@@ -46,6 +54,7 @@
             </form>
         </div>
 </div>
+    <span id="result"></span>
 </div>
 
 </body>
