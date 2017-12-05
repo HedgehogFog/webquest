@@ -63,8 +63,10 @@
             var secretWord = "FOURSEASONVIVALDI"
             var errorLetterHas = false;
             for (i = 0; i < 19; i++){
-                if (arr[i].value.toUpperCase() != secretWord[i] && arr[i].value != "")
-                    errorLetterHas = true;
+                arr[i].oninput = function() {
+                    if (arr[i].value.toUpperCase() != secretWord[i] && arr[i].value != "")
+                        errorLetterHas = true;
+                }
             }
 
             if (!errorLetterHas)
