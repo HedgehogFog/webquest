@@ -55,95 +55,264 @@
     <span id="result"></span>
 
     <script>
-        var current = []; // -1 - error, 0 - empty, 1 - success
-        var hasError = false;
-        var hasEmpty = false;
+        var current = 18;
+        var let1 = document.getElementById("letter1");
+        var let2 = document.getElementById("letter2");
+        var let3 = document.getElementById("letter3");
+        var let4 = document.getElementById("letter4");
+        var let5 = document.getElementById("letter5");
+        var let6 = document.getElementById("letter6");
+        var let7 = document.getElementById("letter7");
+        var let8 = document.getElementById("letter8");
+        var let9 = document.getElementById("letter9");
+        //
+        var let10 = document.getElementById("letter10");
+        var let11 = document.getElementById("letter11");
+        var let12 = document.getElementById("letter12");
+        var let13 = document.getElementById("letter13");
+        var let14 = document.getElementById("letter14");
+        var let15 = document.getElementById("letter15");
+        var let16 = document.getElementById("letter16");
+        var let17 = document.getElementById("letter17");
+        var let18 = document.getElementById("letter18");
 
-        var arr = [];
-        // var let1 = document.getElementById("letter1");
-        // var let2 = document.getElementById("letter2");
-        // var let3 = document.getElementById("letter3");
-        // var let4 = document.getElementById("letter4");
-        // var let5 = document.getElementById("letter5");
-        // var let6 = document.getElementById("letter6");
-        // var let7 = document.getElementById("letter7");
-        // var let8 = document.getElementById("letter8");
-        // var let9 = document.getElementById("letter9");
-        //
-        // var let10 = document.getElementById("letter10");
-        // var let11 = document.getElementById("letter11");
-        // var let12 = document.getElementById("letter12");
-        // var
-        // var let14 = document.getElementById("letter14");
-        // var let15 = document.getElementById("letter15");
-        // var let16 = document.getElementById("letter16");
-        // var let17 = document.getElementById("letter17");
-        // var let18 = document.getElementById("letter18");
+        let1.oninput = function () {
+            current--;
 
-        // let1.oninput = function () {
-        //     if (let1.value.toUpperCase() == "F" && let1.value != "")
-        //         errorLetterHas = true;
-        // }
-        //
-        // let2.oninput = function () {
-        //     ilet13 = document.getElementById("letter13");f (let2.value.toUpperCase() == "O" && let1.value != "")
-        //         errorLetterHas = true;
-        // }
-        //
-        // let2.oninput = function () {
-        //     if (let2.value.toUpperCase() == "O" && let1.value != "")
-        //         errorLetterHas = true;
-        // }
-        //
-        // let3.oninput = function () {
-        //     if (let3.value.toUpperCase() == "U" && let1.value != "")
-        //         errorLetterHas = true;
-        // }
-        //
-        // let4.oninput = function () {
-        //     if (let4.value.toUpperCase() == "R" && let1.value != "")
-        //         errorLetterHas = true;
-        // }
-        //
-        // let5.oninput = function () {
-        //     if (let5.value.toUpperCase() == "S" && let1.value != "")
-        //         errorLetterHas = true;
-        // }
-        //
-        // let6.oninput = function () {
-        //     if (let6.value.toUpperCase() == "E" && let1.value != "")
-        //         errorLetterHas = true;
-        // }
-        //
-        // let7.oninput = function () {
-        //     if (let7.value.toUpperCase() == "A" && let1.value != "")
-        //         errorLetterHas = true;
-        // }
-        var i;
-
-        for (i = 0; i < 18; i++)
-            arr[i] = document.getElementById("letter" + (i + 1));
-
-        var secretWord = "FOURSEASONVIVALDI"
-        for (i = 0; i < 19; i++) {
-            arr[i].oninput = function () {
-                if (arr[i].value.toUpperCase() != secretWord[i] && arr[i].value != "")
-                    current[i] = -1;
-                else if (arr[i].value == "")
-                    current[i] = 0;
-                else
-                    current[i] = 1;
+            if (let1.value == "")
+                current++;
+            else if (let1.value.toUpperCase() != "F") {
+                document.getElementById('result').innerHTML = "Error";
+                current++;
             }
+
+            if (current == 0)
+                document.getElementById('result').innerHTML = "Success";
+
         }
-        for(i = 0; i < 18; i++){
-            if (current[i] == -1)
-                hasError = true;
+        let2.oninput = function () {
+            current--;
+
+            if (let2.value == "") current++;
+            else if (let2.value.toUpperCase() != "O") {
+                document.getElementById('result').innerHTML = "Error";
+                current++;
+            }
+
+            if (current == 0)
+                document.getElementById('result').innerHTML = "Success";
+
+        }
+        let3.oninput = function () {
+            current--;
+
+            if (let3.value == "") current++;
+            else if (let3.value.toUpperCase() != "U") {
+                document.getElementById('result').innerHTML = "Error";
+                current++;
+            }
+
+            if (current == 0)
+                document.getElementById('result').innerHTML = "Success";
+
+        }
+        let4.oninput = function () {
+            current--;
+
+            if (let4.value == "") current++;
+            else if (let4.value.toUpperCase() != "R") {
+                document.getElementById('result').innerHTML = "Error";
+                current++;
+            }
+
+            if (current == 0)
+                document.getElementById('result').innerHTML = "Success";
+
         }
 
-        if (!hasError)
-            document.getElementById('result').innerHTML = "Success!";
-        else
-            document.getElementById('result').innerHTML = "Error";
+        let5.oninput = function () {
+            current--;
+
+            if (let5.value == "") current++;
+            else if (let5.value.toUpperCase() != "S") {
+                document.getElementById('result').innerHTML = "Error";
+                current++;
+            }
+
+            if (current == 0)
+                document.getElementById('result').innerHTML = "Success";
+
+        }
+        let6.oninput = function () {
+            current--;
+
+            if (let6.value == "") current++;
+            else if (let6.value.toUpperCase() != "E") {
+                document.getElementById('result').innerHTML = "Error";
+                current++;
+            }
+
+            if (current == 0)
+                document.getElementById('result').innerHTML = "Success";
+
+        }
+        let7.oninput = function () {
+            current--;
+
+            if (let7.value == "") current++;
+            else if (let7.value.toUpperCase() != "A") {
+                document.getElementById('result').innerHTML = "Error";
+                current++;
+            }
+
+            if (current == 0)
+                document.getElementById('result').innerHTML = "Success";
+
+        }
+        let8.oninput = function () {
+            current--;
+
+            if (let8.value == "") current++;
+            else if (let8.value.toUpperCase() != "S") {
+                document.getElementById('result').innerHTML = "Error";
+                current++;
+            }
+
+            if (current == 0)
+                document.getElementById('result').innerHTML = "Success";
+
+        }
+        let9.oninput = function () {
+            current--;
+
+            if (let9.value == "") current++;
+            else if (let9.value.toUpperCase() != "O") {
+                document.getElementById('result').innerHTML = "Error";
+                current++;
+            }
+
+            if (current == 0)
+                document.getElementById('result').innerHTML = "Success";
+
+        }
+        let10.oninput = function () {
+            current--;
+
+            if (let10.value == "") current++;
+            else if (let10.value.toUpperCase() != "N") {
+                document.getElementById('result').innerHTML = "Error";
+                current++;
+            }
+
+            if (current == 0)
+                document.getElementById('result').innerHTML = "Success";
+
+        }
+        let11.oninput = function () {
+            current--;
+
+            if (let11.value == "") current++;
+            else if (let11.value.toUpperCase() != "S") {
+                document.getElementById('result').innerHTML = "Error";
+                current++;
+            }
+
+            if (current == 0)
+                document.getElementById('result').innerHTML = "Success";
+
+        }
+
+        let12.oninput = function () {
+            current--;
+
+            if (let12.value == "") current++;
+            else if (let12.value.toUpperCase() != "V") {
+                document.getElementById('result').innerHTML = "Error";
+                current++;
+            }
+
+            if (current == 0)
+                document.getElementById('result').innerHTML = "Success";
+
+        }
+        let13.oninput = function () {
+            current--;
+
+            if (let13.value == "") current++;
+            else if (let13.value.toUpperCase() != "I") {
+                document.getElementById('result').innerHTML = "Error";
+                current++;
+            }
+
+            if (current == 0)
+                document.getElementById('result').innerHTML = "Success";
+
+        }
+        let14.oninput = function () {
+            current--;
+
+            if (let14.value == "") current++;
+            else if (let14.value.toUpperCase() != "V") {
+                document.getElementById('result').innerHTML = "Error";
+                current++;
+            }
+
+            if (current == 0)
+                document.getElementById('result').innerHTML = "Success";
+
+        }
+        let15.oninput = function () {
+            current--;
+
+            if (let15.value == "") current++;
+            else if (let15.value.toUpperCase() != "A") {
+                document.getElementById('result').innerHTML = "Error";
+                current++;
+            }
+
+            if (current == 0)
+                document.getElementById('result').innerHTML = "Success";
+
+        }
+        let16.oninput = function () {
+            current--;
+
+            if (let16.value == "") current++;
+            else if (let16.value.toUpperCase() != "L") {
+                document.getElementById('result').innerHTML = "Error";
+                current++;
+            }
+
+            if (current == 0)
+                document.getElementById('result').innerHTML = "Success";
+
+        }
+        let17.oninput = function () {
+            current--;
+
+            if (let17.value == "") current++;
+            else if (let17.value.toUpperCase() != "D") {
+                document.getElementById('result').innerHTML = "Error";
+                current++;
+            }
+
+            if (current == 0)
+                document.getElementById('result').innerHTML = "Success";
+
+        }
+        let18.oninput = function () {
+            current--;
+
+            if (let18.value == "") current++;
+            else if (let18.value.toUpperCase() != "I") {
+                document.getElementById('result').innerHTML = "Error";
+                current++;
+            }
+
+            if (current == 0)
+                document.getElementById('result').innerHTML = "Success";
+
+        }
 
     </script>
 </div>
