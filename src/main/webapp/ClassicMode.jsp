@@ -84,10 +84,11 @@
             else if (let1.value.toUpperCase() != "F") {
                 document.getElementById('result').innerHTML = "Error";
                 current++;
-            }
+            } else
+                document.getElementById('result').innerHTML = "";
 
             if (current == 0)
-                document.getElementById('result').innerHTML = "Success";
+                document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
         }
         let2.oninput = function () {
@@ -97,10 +98,11 @@
             else if (let2.value.toUpperCase() != "O") {
                 document.getElementById('result').innerHTML = "Error";
                 current++;
-            }
+            } else
+                document.getElementById('result').innerHTML = "";
 
             if (current == 0)
-                document.getElementById('result').innerHTML = "Success";
+                document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
         }
         let3.oninput = function () {
@@ -110,10 +112,11 @@
             else if (let3.value.toUpperCase() != "U") {
                 document.getElementById('result').innerHTML = "Error";
                 current++;
-            }
+            } else
+                document.getElementById('result').innerHTML = "";
 
             if (current == 0)
-                document.getElementById('result').innerHTML = "Success";
+                document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
         }
         let4.oninput = function () {
@@ -123,10 +126,10 @@
             else if (let4.value.toUpperCase() != "R") {
                 document.getElementById('result').innerHTML = "Error";
                 current++;
-            }
-
+            } else
+                document.getElementById('result').innerHTML = "";
             if (current == 0)
-                document.getElementById('result').innerHTML = "Success";
+                document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
         }
 
@@ -137,10 +140,11 @@
             else if (let5.value.toUpperCase() != "S") {
                 document.getElementById('result').innerHTML = "Error";
                 current++;
-            }
+            } else
+                document.getElementById('result').innerHTML = "";
 
             if (current == 0)
-                document.getElementById('result').innerHTML = "Success";
+                document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
         }
         let6.oninput = function () {
@@ -150,10 +154,10 @@
             else if (let6.value.toUpperCase() != "E") {
                 document.getElementById('result').innerHTML = "Error";
                 current++;
-            }
-
+            } else
+                document.getElementById('result').innerHTML = "";
             if (current == 0)
-                document.getElementById('result').innerHTML = "Success";
+                document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
         }
         let7.oninput = function () {
@@ -163,10 +167,11 @@
             else if (let7.value.toUpperCase() != "A") {
                 document.getElementById('result').innerHTML = "Error";
                 current++;
-            }
+            } else
+                document.getElementById('result').innerHTML = "";
 
             if (current == 0)
-                document.getElementById('result').innerHTML = "Success";
+                document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
         }
         let8.oninput = function () {
@@ -176,10 +181,11 @@
             else if (let8.value.toUpperCase() != "S") {
                 document.getElementById('result').innerHTML = "Error";
                 current++;
-            }
+            } else
+                document.getElementById('result').innerHTML = "";
 
             if (current == 0)
-                document.getElementById('result').innerHTML = "Success";
+                document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
         }
         let9.oninput = function () {
@@ -189,10 +195,11 @@
             else if (let9.value.toUpperCase() != "O") {
                 document.getElementById('result').innerHTML = "Error";
                 current++;
-            }
+            } else
+                document.getElementById('result').innerHTML = "";
 
             if (current == 0)
-                document.getElementById('result').innerHTML = "Success";
+                document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
         }
         let10.oninput = function () {
@@ -202,10 +209,11 @@
             else if (let10.value.toUpperCase() != "N") {
                 document.getElementById('result').innerHTML = "Error";
                 current++;
-            }
+            } else
+                document.getElementById('result').innerHTML = "";
 
             if (current == 0)
-                document.getElementById('result').innerHTML = "Success";
+                document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
         }
         let11.oninput = function () {
@@ -215,10 +223,11 @@
             else if (let11.value.toUpperCase() != "S") {
                 document.getElementById('result').innerHTML = "Error";
                 current++;
-            }
+            } else
+                document.getElementById('result').innerHTML = "";
 
             if (current == 0)
-                document.getElementById('result').innerHTML = "Success";
+                document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
         }
 
@@ -229,10 +238,11 @@
             else if (let12.value.toUpperCase() != "V") {
                 document.getElementById('result').innerHTML = "Error";
                 current++;
-            }
+            } else
+                document.getElementById('result').innerHTML = "";
 
             if (current == 0)
-                document.getElementById('result').innerHTML = "Success";
+                document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
         }
         let13.oninput = function () {
@@ -242,10 +252,11 @@
             else if (let13.value.toUpperCase() != "I") {
                 document.getElementById('result').innerHTML = "Error";
                 current++;
-            }
+            } else
+                document.getElementById('result').innerHTML = "";
 
             if (current == 0)
-                document.getElementById('result').innerHTML = "Success";
+                document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
         }
         let14.oninput = function () {
@@ -255,10 +266,11 @@
             else if (let14.value.toUpperCase() != "V") {
                 document.getElementById('result').innerHTML = "Error";
                 current++;
-            }
+            } else
+                document.getElementById('result').innerHTML = "";
 
             if (current == 0)
-                document.getElementById('result').innerHTML = "Success";
+                document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
         }
         let15.oninput = function () {
@@ -268,10 +280,10 @@
             else if (let15.value.toUpperCase() != "A") {
                 document.getElementById('result').innerHTML = "Error";
                 current++;
-            }
-
+            } else
+                document.getElementById('result').innerHTML = "";
             if (current == 0)
-                document.getElementById('result').innerHTML = "Success";
+                document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
         }
         let16.oninput = function () {
@@ -281,10 +293,11 @@
             else if (let16.value.toUpperCase() != "L") {
                 document.getElementById('result').innerHTML = "Error";
                 current++;
-            }
+            } else
+                document.getElementById('result').innerHTML = "";
 
             if (current == 0)
-                document.getElementById('result').innerHTML = "Success";
+                document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
         }
         let17.oninput = function () {
@@ -294,10 +307,11 @@
             else if (let17.value.toUpperCase() != "D") {
                 document.getElementById('result').innerHTML = "Error";
                 current++;
-            }
+            } else
+                document.getElementById('result').innerHTML = "";
 
             if (current == 0)
-                document.getElementById('result').innerHTML = "Success";
+                document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
         }
         let18.oninput = function () {
@@ -307,10 +321,11 @@
             else if (let18.value.toUpperCase() != "I") {
                 document.getElementById('result').innerHTML = "Error";
                 current++;
-            }
+            } else
+                document.getElementById('result').innerHTML = "";
 
             if (current == 0)
-                document.getElementById('result').innerHTML = "Success";
+                document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
         }
 
