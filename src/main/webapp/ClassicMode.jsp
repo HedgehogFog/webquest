@@ -119,20 +119,18 @@
 
 
         // var secretWord = "FOURSEASONVIVALDI"
-        for (i = 0; i < 19; i++) {
-            arr[i].oninput = function () {
-                if (arr[i].value.toUpperCase() != secretWord[i] && arr[i].value != "")
-                    errorLetterHas = true;
-            }
-        }
+        // for (i = 0; i < 19; i++) {
+        //     arr[i].oninput = function () {
+        //         if (arr[i].value.toUpperCase() != secretWord[i] && arr[i].value != "")
+        //             errorLetterHas = true;
+        //     }
+        // }
 
         if (!errorLetterHas)
-            document.getElementById('result').innerHTML = input.value;
+            document.getElementById('result').innerHTML = "Success!";
         else
-            document.getElementById('result').innerHTML = "Error"
+            document.getElementById('result').innerHTML = "Error";
 
-        }
-        ;
     </script>
 </div>
 
