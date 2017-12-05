@@ -34,6 +34,9 @@
                 input.oninput = function() {
                     if (input.value == "A")
                         document.getElementById('result').innerHTML = input.value;
+                    else
+                        document.getElementById('result').innerHTML = "Error"
+
                 };
             </script>
         </form>
