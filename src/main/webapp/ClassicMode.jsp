@@ -10,7 +10,7 @@
 <div class="classicmode">
     <div class="classicmodebitgallery">
         <div class="bitokpos"><p
-                class="bitoktext"><%= (Data.getInstance().getUser(request.getRemoteAddr()) == null) ? 13 : Data.getInstance().getUser(request.getRemoteAddr()).getCoins() %>
+                class="bitoktext"><%= (D) ata.getInstance().getUser(request.getRemoteAddr()== null) ? 13 : Data.getInstance().getUser(request.getRemoteAddr()).getCoins() %>
             <img src="img/bit.png"></p></div>
     </div>
     <div class="classicmodetune">
@@ -56,6 +56,9 @@
 
     <script>
         var current = 18;
+        var currentTune = 11;
+        var currentCompozer = 7;
+
         var let1 = document.getElementById("letter1");
         var let2 = document.getElementById("letter2");
         var let3 = document.getElementById("letter3");
@@ -78,255 +81,486 @@
 
         let1.oninput = function () {
             current--;
+            currentTune--;
 
-            if (let1.value == "")
+            if (let1.value == ""){
                 current++;
+                currentTune++;
+            }
             else if (let1.value.toUpperCase() != "F") {
                 document.getElementById('result').innerHTML = "Error";
                 current++;
+                currentTune++;
             } else
                 document.getElementById('result').innerHTML = "";
 
             if (current == 0)
                 document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
+            if (currentTune == 0){
+                <%
+                if (!Data.getInstance().getUser(request.getRemoteAddr()).hasTone){
+                    Data.getInstance().getUser(request.getRemoteAddr()).setCoins( Data.getInstance().getUser(request.getRemoteAddr()).getCoins() + 15);
+                    Data.getInstance().getUser(request.getRemoteAddr()).hasTone = true;
+                }
+                %>
+            }
         }
         let2.oninput = function () {
             current--;
+            currentTune--;
 
-            if (let2.value == "") current++;
+            if (let2.value == "") {
+                current++;
+                currentTune++;
+            }
             else if (let2.value.toUpperCase() != "O") {
                 document.getElementById('result').innerHTML = "Error";
                 current++;
+                currentTune++;
             } else
                 document.getElementById('result').innerHTML = "";
 
             if (current == 0)
                 document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
+            if (currentTune == 0){
+                <%
+                if (!Data.getInstance().getUser(request.getRemoteAddr()).hasTone){
+                    Data.getInstance().getUser(request.getRemoteAddr()).setCoins( Data.getInstance().getUser(request.getRemoteAddr()).getCoins() + 15);
+                    Data.getInstance().getUser(request.getRemoteAddr()).hasTone = true;
+                }
+                %>
+            }
         }
         let3.oninput = function () {
             current--;
+            currentTune--;
 
-            if (let3.value == "") current++;
+            if (let3.value == "") {current++;
+                currentTune++;}
             else if (let3.value.toUpperCase() != "U") {
                 document.getElementById('result').innerHTML = "Error";
                 current++;
+                currentTune++;
             } else
                 document.getElementById('result').innerHTML = "";
 
             if (current == 0)
                 document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
+            if (currentTune == 0){
+                <%
+                if (!Data.getInstance().getUser(request.getRemoteAddr()).hasTone){
+                    Data.getInstance().getUser(request.getRemoteAddr()).setCoins( Data.getInstance().getUser(request.getRemoteAddr()).getCoins() + 15);
+                    Data.getInstance().getUser(request.getRemoteAddr()).hasTone = true;
+                }
+                %>
+            }
         }
         let4.oninput = function () {
             current--;
+            currentTune--;
 
-            if (let4.value == "") current++;
+            if (let4.value == "") {
+                current++;
+                currentTune++;
+            }
             else if (let4.value.toUpperCase() != "R") {
                 document.getElementById('result').innerHTML = "Error";
                 current++;
+                currentTune++;
             } else
                 document.getElementById('result').innerHTML = "";
             if (current == 0)
                 document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
+            if (currentTune == 0){
+                <%
+                if (!Data.getInstance().getUser(request.getRemoteAddr()).hasTone){
+                    Data.getInstance().getUser(request.getRemoteAddr()).setCoins( Data.getInstance().getUser(request.getRemoteAddr()).getCoins() + 15);
+                    Data.getInstance().getUser(request.getRemoteAddr()).hasTone = true;
+                }
+                %>
+            }
         }
 
         let5.oninput = function () {
             current--;
+            currentTune--;
 
-            if (let5.value == "") current++;
+            if (let5.value == "") {
+                current++;
+                currentTune++;
+            }
             else if (let5.value.toUpperCase() != "S") {
                 document.getElementById('result').innerHTML = "Error";
                 current++;
+                currentTune++;
             } else
                 document.getElementById('result').innerHTML = "";
 
             if (current == 0)
                 document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
+            if (currentTune == 0){
+                <%
+                if (!Data.getInstance().getUser(request.getRemoteAddr()).hasTone){
+                    Data.getInstance().getUser(request.getRemoteAddr()).setCoins( Data.getInstance().getUser(request.getRemoteAddr()).getCoins() + 15);
+                    Data.getInstance().getUser(request.getRemoteAddr()).hasTone = true;
+                }
+                %>
+            }
         }
         let6.oninput = function () {
             current--;
+            currentTune--;
 
-            if (let6.value == "") current++;
+            if (let6.value == "") {
+                current++;
+                currentTune++;
+            }
             else if (let6.value.toUpperCase() != "E") {
                 document.getElementById('result').innerHTML = "Error";
                 current++;
+                currentTune++;
             } else
                 document.getElementById('result').innerHTML = "";
             if (current == 0)
                 document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
+            if (currentTune == 0){
+                <%
+                if (!Data.getInstance().getUser(request.getRemoteAddr()).hasTone){
+                    Data.getInstance().getUser(request.getRemoteAddr()).setCoins( Data.getInstance().getUser(request.getRemoteAddr()).getCoins() + 15);
+                    Data.getInstance().getUser(request.getRemoteAddr()).hasTone = true;
+                }
+                %>
+            }
         }
         let7.oninput = function () {
             current--;
+            currentTune--;
 
-            if (let7.value == "") current++;
+            if (let7.value == "") {
+                current++;
+                currentTune++;
+            }
             else if (let7.value.toUpperCase() != "A") {
                 document.getElementById('result').innerHTML = "Error";
                 current++;
+                currentTune++;
             } else
                 document.getElementById('result').innerHTML = "";
 
             if (current == 0)
                 document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
+            if (currentTune == 0){
+                <%
+                if (!Data.getInstance().getUser(request.getRemoteAddr()).hasTone){
+                    Data.getInstance().getUser(request.getRemoteAddr()).setCoins( Data.getInstance().getUser(request.getRemoteAddr()).getCoins() + 15);
+                    Data.getInstance().getUser(request.getRemoteAddr()).hasTone = true;
+                }
+                %>
+            }
         }
         let8.oninput = function () {
             current--;
+            currentTune--;
 
-            if (let8.value == "") current++;
+            if (let8.value == "") {
+                current++;
+                currentTune++;
+            }
             else if (let8.value.toUpperCase() != "S") {
                 document.getElementById('result').innerHTML = "Error";
                 current++;
+                currentTune++;
             } else
                 document.getElementById('result').innerHTML = "";
 
             if (current == 0)
                 document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
+            if (currentTune == 0){
+                <%
+                if (!Data.getInstance().getUser(request.getRemoteAddr()).hasTone){
+                    Data.getInstance().getUser(request.getRemoteAddr()).setCoins( Data.getInstance().getUser(request.getRemoteAddr()).getCoins() + 15);
+                    Data.getInstance().getUser(request.getRemoteAddr()).hasTone = true;
+                }
+                %>
+            }
         }
         let9.oninput = function () {
             current--;
+            currentTune--;
 
-            if (let9.value == "") current++;
+            if (let9.value == "") {
+                current++;
+                currentTune++;
+            }
             else if (let9.value.toUpperCase() != "O") {
                 document.getElementById('result').innerHTML = "Error";
                 current++;
+                currentTune++;
             } else
                 document.getElementById('result').innerHTML = "";
 
             if (current == 0)
                 document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
+            if (currentTune == 0){
+                <%
+                if (!Data.getInstance().getUser(request.getRemoteAddr()).hasTone){
+                    Data.getInstance().getUser(request.getRemoteAddr()).setCoins( Data.getInstance().getUser(request.getRemoteAddr()).getCoins() + 15);
+                    Data.getInstance().getUser(request.getRemoteAddr()).hasTone = true;
+                }
+                %>
+            }
         }
         let10.oninput = function () {
             current--;
+            currentTune--;
 
-            if (let10.value == "") current++;
+            if (let10.value == "") {
+                current++;
+                currentTune++;
+            }
             else if (let10.value.toUpperCase() != "N") {
                 document.getElementById('result').innerHTML = "Error";
                 current++;
+                currentTune++;
             } else
                 document.getElementById('result').innerHTML = "";
 
             if (current == 0)
                 document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
+            if (currentTune == 0){
+                <%
+                if (!Data.getInstance().getUser(request.getRemoteAddr()).hasTone){
+                    Data.getInstance().getUser(request.getRemoteAddr()).setCoins( Data.getInstance().getUser(request.getRemoteAddr()).getCoins() + 15);
+                    Data.getInstance().getUser(request.getRemoteAddr()).hasTone = true;
+                }
+                %>
+            }
         }
         let11.oninput = function () {
             current--;
+            currentTune--;
 
-            if (let11.value == "") current++;
+            if (let11.value == "") {
+                current++;
+                currentTune++;
+            }
             else if (let11.value.toUpperCase() != "S") {
                 document.getElementById('result').innerHTML = "Error";
                 current++;
+                currentTune++;
             } else
                 document.getElementById('result').innerHTML = "";
 
             if (current == 0)
                 document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
+            if (currentTune == 0){
+                <%
+                if (!Data.getInstance().getUser(request.getRemoteAddr()).hasTone){
+                    Data.getInstance().getUser(request.getRemoteAddr()).setCoins( Data.getInstance().getUser(request.getRemoteAddr()).getCoins() + 15);
+                    Data.getInstance().getUser(request.getRemoteAddr()).hasTone = true;
+                }
+                %>
+            }
         }
 
         let12.oninput = function () {
             current--;
+            currentCompozer--;
 
-            if (let12.value == "") current++;
+            if (let12.value == "") {
+                current++;
+                currentCompozer++;
+            }
             else if (let12.value.toUpperCase() != "V") {
                 document.getElementById('result').innerHTML = "Error";
                 current++;
+                currentCompozer++;
             } else
                 document.getElementById('result').innerHTML = "";
 
             if (current == 0)
                 document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
+            if (currentCompozer == 0){
+                <%
+                if (!Data.getInstance().getUser(request.getRemoteAddr()).hasComposer){
+                    Data.getInstance().getUser(request.getRemoteAddr()).setCoins( Data.getInstance().getUser(request.getRemoteAddr()).getCoins() + 15);
+                    Data.getInstance().getUser(request.getRemoteAddr()).hasComposer = true;
+                }
+                %>
+            }
         }
         let13.oninput = function () {
             current--;
+            currentCompozer--;
 
-            if (let13.value == "") current++;
+            if (let13.value == "") {
+                current++;
+                currentCompozer++;
+            }
             else if (let13.value.toUpperCase() != "I") {
                 document.getElementById('result').innerHTML = "Error";
                 current++;
+                currentCompozer++;
             } else
                 document.getElementById('result').innerHTML = "";
 
             if (current == 0)
                 document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
+            if (currentCompozer == 0){
+                <%
+                if (!Data.getInstance().getUser(request.getRemoteAddr()).hasComposer){
+                    Data.getInstance().getUser(request.getRemoteAddr()).setCoins( Data.getInstance().getUser(request.getRemoteAddr()).getCoins() + 15);
+                    Data.getInstance().getUser(request.getRemoteAddr()).hasComposer = true;
+                }
+                %>
+            }
         }
         let14.oninput = function () {
             current--;
+            currentCompozer--;
 
-            if (let14.value == "") current++;
+            if (let14.value == "") {
+                current++;
+                currentCompozer++;
+            }
             else if (let14.value.toUpperCase() != "V") {
                 document.getElementById('result').innerHTML = "Error";
                 current++;
+                currentCompozer++;
             } else
                 document.getElementById('result').innerHTML = "";
 
             if (current == 0)
                 document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
+            if (currentCompozer == 0){
+                <%
+                if (!Data.getInstance().getUser(request.getRemoteAddr()).hasComposer){
+                    Data.getInstance().getUser(request.getRemoteAddr()).setCoins( Data.getInstance().getUser(request.getRemoteAddr()).getCoins() + 15);
+                    Data.getInstance().getUser(request.getRemoteAddr()).hasComposer = true;
+                }
+                %>
+            }
         }
         let15.oninput = function () {
             current--;
+            currentCompozer--;
 
-            if (let15.value == "") current++;
+            if (let15.value == "") {
+                current++;
+                currentCompozer++;
+            }
             else if (let15.value.toUpperCase() != "A") {
                 document.getElementById('result').innerHTML = "Error";
                 current++;
+                currentCompozer++;
             } else
                 document.getElementById('result').innerHTML = "";
             if (current == 0)
                 document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
+            if (currentCompozer == 0){
+                <%
+                if (!Data.getInstance().getUser(request.getRemoteAddr()).hasComposer){
+                    Data.getInstance().getUser(request.getRemoteAddr()).setCoins( Data.getInstance().getUser(request.getRemoteAddr()).getCoins() + 15);
+                    Data.getInstance().getUser(request.getRemoteAddr()).hasComposer = true;
+                }
+                %>
+            }
         }
         let16.oninput = function () {
             current--;
+            currentCompozer--;
 
-            if (let16.value == "") current++;
+            if (let16.value == "") {
+                current++;
+                currentCompozer++;
+            }
             else if (let16.value.toUpperCase() != "L") {
                 document.getElementById('result').innerHTML = "Error";
                 current++;
+                currentCompozer++;
             } else
                 document.getElementById('result').innerHTML = "";
 
             if (current == 0)
                 document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
+            if (currentCompozer == 0){
+                <%
+                if (!Data.getInstance().getUser(request.getRemoteAddr()).hasComposer){
+                    Data.getInstance().getUser(request.getRemoteAddr()).setCoins( Data.getInstance().getUser(request.getRemoteAddr()).getCoins() + 15);
+                    Data.getInstance().getUser(request.getRemoteAddr()).hasComposer = true;
+                }
+                %>
+            }
         }
         let17.oninput = function () {
             current--;
+            currentCompozer--;
 
-            if (let17.value == "") current++;
+            if (let17.value == "") {
+                current++;
+                currentCompozer++;
+            }
             else if (let17.value.toUpperCase() != "D") {
                 document.getElementById('result').innerHTML = "Error";
                 current++;
+                currentCompozer++;
             } else
                 document.getElementById('result').innerHTML = "";
 
             if (current == 0)
                 document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
+            if (currentCompozer == 0){
+                <%
+                if (!Data.getInstance().getUser(request.getRemoteAddr()).hasComposer){
+                    Data.getInstance().getUser(request.getRemoteAddr()).setCoins( Data.getInstance().getUser(request.getRemoteAddr()).getCoins() + 15);
+                    Data.getInstance().getUser(request.getRemoteAddr()).hasComposer = true;
+                }
+                %>
+            }
         }
         let18.oninput = function () {
             current--;
+            currentCompozer--;
 
-            if (let18.value == "") current++;
+            if (let18.value == "") {
+                current++;
+                currentCompozer++;
+            }
             else if (let18.value.toUpperCase() != "I") {
                 document.getElementById('result').innerHTML = "Error";
                 current++;
+                currentCompozer++;
             } else
                 document.getElementById('result').innerHTML = "";
 
             if (current == 0)
                 document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
+            if (currentCompozer == 0){
+                <%
+                if (!Data.getInstance().getUser(request.getRemoteAddr()).hasComposer){
+                    Data.getInstance().getUser(request.getRemoteAddr()).setCoins( Data.getInstance().getUser(request.getRemoteAddr()).getCoins() + 15);
+                    Data.getInstance().getUser(request.getRemoteAddr()).hasComposer = true;
+                }
+                %>
+            }
         }
 
     </script>

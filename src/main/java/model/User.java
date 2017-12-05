@@ -9,6 +9,9 @@ public class User {
     private String ipAddress;
     private int coins;
 
+    public boolean hasTone = false;
+    public boolean hasComposer = false;
+
     public User(String ipAddress){
         this.ipAddress = ipAddress;
     }
