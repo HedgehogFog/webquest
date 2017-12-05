@@ -16,7 +16,7 @@
 <div class="classicmodetuned"> <audio src="mel/1.mp3" controls >  </audio>  </div>
     <div class="classicmodeguesstablepos">
         <form>
-            <input maxlength="1" class="guesstable">
+            <input maxlength="1" class="guesstable" id="letter1">
             <input maxlength="1" class="guesstable">
             <input maxlength="1" class="guesstable">
             <input maxlength="1" class="guesstable">
@@ -29,7 +29,7 @@
             <input maxlength="1" class="guesstable">
             <input maxlength="1" class="guesstable">
             <script>
-                var input = document.body.getElementsByClassName("classicmodetuned")
+                var input = document.getElementById("letter1")
 
                 input.oninput = function() {
                     if (input.value == "A")
