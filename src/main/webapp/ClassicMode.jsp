@@ -7,6 +7,9 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+<%
+    (Data.getInstance().getUser(request.getRemoteAddr()) == null) ? Data.getInstance().getUsers().add(new User(request.getRemoteAddr())) :
+%>
 <div class="classicmode">
     <div class="classicmodebitgallery">
         <div class="bitokpos"><p

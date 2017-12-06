@@ -28,7 +28,7 @@ public class Data
             if (users.get(i).getIpAddress().equals(ip))
                 return users.get(i);
         }
-			
+
 		return null;
 	}
 	
