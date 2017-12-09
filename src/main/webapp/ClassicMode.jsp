@@ -14,7 +14,7 @@
             <img src="img/bit.png"></p></div>
     </div>
     <div class="classicmodetune">
-        <div class="classicmodetunetext" style="align-content: center"><p> Great! <a class="classicmodelinks" href="Picturemode.html">Guess that
+        <div class="classicmodetunetext" style="align-content: center   "><p> Great! <a class="classicmodelinks" href="Picturemode.html">Guess that
             tune</a> <img width="110px" height="110px" src="img/sha.jpg"></p></div>
         <div class="classicmodetuned">
             <audio src="mel/1.mp3" controls></audio>
@@ -53,8 +53,8 @@
         </div>
     </div>
     <br>
-    <span id="result"></span><br>
-    <a id="nextLevel" style="color: aqua"></a>
+    <span id="result" class="result"></span><br>
+    <a id="nextLevel" class="result2"></a>
 
     <script>
         var wordKnow = false;

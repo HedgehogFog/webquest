@@ -222,6 +222,12 @@ text-align: center;
     font-size: 30pt;
     font-family: pixelFont;
 }
+
+.result2{
+    color: aqua;
+    font-size: 30pt;
+    font-family: pixelFont;
+}
 /*Index stuff*/
 table {
      /* Выравниваем таблицу по центру окна  */
