@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="picturemode">
+    <div class="classicmodetunetext"> PICTURE MODE</div>
+    <div class="framediv"><iframe name="littleframebuddy" scrolling="no" class="framy" src="img\omsk.bmp"></iframe></div>
+    <div class="frameworklinks">
+        <p><a class="classicmodelinks" href="OmskLetterWay.html"  >Show a letter</a> <img src="img/icub.jpg">  </p>
+        <p><a class="classicmodelinks" href="OmskPicturedWay.html">Quality +</a> <nobr id="classicmodegreyjoke"> Face the quality</nobr> </p>
+    </div>
+    <div class="picturemodzag">What do you see?</div>
+    <div id="QuestionFonts"> <p>Santa want the whole word from ya buddy <img src="img/santa.png"> </p>
+    <div class="picturemodeguesstableposs">
+        <form>
+            <input maxlength="6" class="omsktable" id="letter1">
+        </form>
+    </div>
+</div>
+</div>
+<br>
+<span id="result"></span><br>
+<a id="nextLevel" style="color: aqua"></a>
+<script>
+    var let1 = document.getElementById("letter1");
+
+    let1.oninput = function () {
+        if (let1.value.length == 6){
+            if (let1.value.toUpperCase() == "WINTER"){
+                document.getElementById('result').innerHTML = "Winter Is Coming";
+                var a = document.getElementById('nextLevel');
+                a.textContent = "Next";
+                a.href = "indev.html"
+            } else if (let1.value.toUpperCase() == "AUTUMN"){
+                document.getElementById('result').innerHTML = "Autumn - the color of beer";
+                var a = document.getElementById('nextLevel');
+                a.textContent = "Next";
+                a.href = "indev.html"
+            } else {
+                document.getElementById('result').innerHTML = "Error";
+                var audio = new Audio();
+                audio.src = "audio/Chomp.wav"
+                audio.play();
+            }
+        }
+    }
+</script>
+
+</body>
+</html>

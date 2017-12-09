@@ -203,6 +203,19 @@ text-align: center;
     text-align: center;
     text-decoration: none;
 }
+/*Omski stuff */
+.omsktable{
+    width: 240px;
+    height: 60px;
+    background-color: rgba(127,127,127,0.3);
+    border: none;
+    outline:none;
+    text-align: center;
+    font-family: pixelFont;
+    color: #FFFFFF;
+    font-size: 30pt;
+    text-transform: uppercase;
+}
 /*Index stuff*/
 table {
      /* Выравниваем таблицу по центру окна  */
