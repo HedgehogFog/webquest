@@ -52,6 +52,7 @@
             </form>
         </div>
     </div>
+    <br>
     <span id="result"></span><br>
     <a id="nextLevel" style="color: aqua"></a>
 
@@ -79,13 +80,15 @@
 
         function checkLet(letter, symbol) {
             if (!wordKnow){
+                current--;
+
                 if (letter.value.toUpperCase() != symbol && letter.value != "") {
                     document.getElementById('result').innerHTML = "Error";
                     var audio = new Audio();
                     audio.src = "audio/Chomp.wav"
                     audio.play();
+                    current++;
                 } else {
-                    current--;
                     // currentTune--;
                     document.getElementById('result').innerHTML = "";
                 }
