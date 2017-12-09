@@ -52,8 +52,8 @@
             </form>
         </div>
     </div>
-    <span id="result"></span>
-    <a id="nextLevel"></a>
+    <span id="result"></span><br>
+    <a id="nextLevel" style="color: aqua"></a>
 
     <script>
         var wordKnow = false;
@@ -81,6 +81,9 @@
             if (!wordKnow){
                 if (letter.value.toUpperCase() != symbol && letter.value != "") {
                     document.getElementById('result').innerHTML = "Error";
+                    var audio = new Audio();
+                    audio.src = "audio/Chomp.wav"
+                    audio.play();
                 } else {
                     current--;
                     // currentTune--;
