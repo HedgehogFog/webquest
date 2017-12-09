@@ -88,6 +88,9 @@
                     audio.src = "audio/Chomp.wav"
                     audio.play();
                     current++;
+                } else if (letter.value == ""){
+                    current++;
+                    document.getElementById('result').innerHTML = "";
                 } else {
                     // currentTune--;
                     document.getElementById('result').innerHTML = "";
