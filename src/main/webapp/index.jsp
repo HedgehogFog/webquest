@@ -5,7 +5,7 @@
     <%@ page contentType="text/html;charset=utf-8" %>
 
     <meta charset="UTF-8">
-    <title>title</title>
+    <title>Start Our Game</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -17,7 +17,7 @@
     </tr>
     <tr>
         <td class="textzag"><a href="DoU.html">CLASSIC<br>MODE </a></td>
-        <td class="textzag"><a href="img/love2.jpg">POP<br>MODE </a></td>
+        <td class="textzag"><a href="indev.html">POP<br>MODE </a></td>
     </tr>
 </table>
 <p> Ваниль Ink </p>

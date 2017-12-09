@@ -88,7 +88,7 @@ h1{
 
     margin: auto;
 }
-.classicmodetunetext{
+.   classicmodetunetext{
     text-align: center;
 }
 .classicmodetunetext2{
@@ -204,7 +204,7 @@ text-align: center;
     text-decoration: none;
 }
 /*Omski stuff */
-.   omsktable{
+.omsktable{
     width: 240px;
     height: 60px;
     background-color: rgba(127,127,127,0.3);
@@ -215,6 +215,12 @@ text-align: center;
     color: #FFFFFF;
     font-size: 30pt;
     text-transform: uppercase;
+}
+
+.result{
+    color: #EAEAEA;
+    font-size: 30pt;
+    font-family: pixelFont;
 }
 /*Index stuff*/
 table {
