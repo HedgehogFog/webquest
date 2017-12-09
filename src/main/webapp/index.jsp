@@ -13,7 +13,7 @@
 <table>
     <tr>
         <td><a href="DoU.html"><img width="246" height="368" src="img/piximon.jpg"> </a></td>
-        <td><a href="love2.jpg"><img width="246" height="368" src="img/b.jpg"> </a></td>
+        <td><a href="indev.html"><img width="246" height="368" src="img/b.jpg"> </a></td>
     </tr>
     <tr>
         <td class="textzag"><a href="DoU.html">CLASSIC<br>MODE </a></td>
