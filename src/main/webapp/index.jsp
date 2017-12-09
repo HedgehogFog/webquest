@@ -1,5 +1,4 @@
-<%@ page import="data.Data" %>
-<%@ page import="model.User" %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,23 +9,6 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<%
-    User current = new User(request.getRemoteAddr());
-    boolean isHave = false;
-    for (User user : Data.getInstance().getUsers()) {
-        if (user.getIpAddress().equals(current.getIpAddress())){
-            isHave = true;
-            break;
-        }
-    }
-    if (!isHave) {
-        current.setCoins(10);
-        Data.getInstance().getUsers().add(current);
-        System.out.println("Add");
-    } else{
-        System.out.println("NOT ADD");
-    }
-%>
 <p class="texmaintzag" >SELECT MODE</p>
 <table>
     <tr>

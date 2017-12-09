@@ -7,13 +7,10 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<%
-    (Data.getInstance().getUser(request.getRemoteAddr()) == null) ? Data.getInstance().getUsers().add(new User(request.getRemoteAddr())) :
-%>
 <div class="classicmode">
     <div class="classicmodebitgallery">
         <div class="bitokpos"><p
-                class="bitoktext"><%= (Data.getInstance().getUser(request.getRemoteAddr()) == null) ? 13 : Data.getInstance().getUser(request.getRemoteAddr()).getCoins() %>
+                class="bitoktext">
             <img src="img/bit.png"></p></div>
     </div>
     <div class="classicmodetune">
@@ -101,12 +98,7 @@
                 document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
             if (currentTune == 0){
-                <%
-                if (!Data.getInstance().getUser(request.getRemoteAddr()).hasTone){
-                    Data.getInstance().getUser(request.getRemoteAddr()).setCoins( Data.getInstance().getUser(request.getRemoteAddr()).getCoins() + 15);
-                    Data.getInstance().getUser(request.getRemoteAddr()).hasTone = true;
-                }
-                %>
+
             }
         }
         let2.oninput = function () {
@@ -128,12 +120,7 @@
                 document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
             if (currentTune == 0){
-                <%
-                if (!Data.getInstance().getUser(request.getRemoteAddr()).hasTone){
-                    Data.getInstance().getUser(request.getRemoteAddr()).setCoins( Data.getInstance().getUser(request.getRemoteAddr()).getCoins() + 15);
-                    Data.getInstance().getUser(request.getRemoteAddr()).hasTone = true;
-                }
-                %>
+
             }
         }
         let3.oninput = function () {
@@ -153,12 +140,7 @@
                 document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
             if (currentTune == 0){
-                <%
-                if (!Data.getInstance().getUser(request.getRemoteAddr()).hasTone){
-                    Data.getInstance().getUser(request.getRemoteAddr()).setCoins( Data.getInstance().getUser(request.getRemoteAddr()).getCoins() + 15);
-                    Data.getInstance().getUser(request.getRemoteAddr()).hasTone = true;
-                }
-                %>
+
             }
         }
         let4.oninput = function () {
@@ -179,12 +161,7 @@
                 document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
             if (currentTune == 0){
-                <%
-                if (!Data.getInstance().getUser(request.getRemoteAddr()).hasTone){
-                    Data.getInstance().getUser(request.getRemoteAddr()).setCoins( Data.getInstance().getUser(request.getRemoteAddr()).getCoins() + 15);
-                    Data.getInstance().getUser(request.getRemoteAddr()).hasTone = true;
-                }
-                %>
+
             }
         }
 
@@ -207,12 +184,7 @@
                 document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
             if (currentTune == 0){
-                <%
-                if (!Data.getInstance().getUser(request.getRemoteAddr()).hasTone){
-                    Data.getInstance().getUser(request.getRemoteAddr()).setCoins( Data.getInstance().getUser(request.getRemoteAddr()).getCoins() + 15);
-                    Data.getInstance().getUser(request.getRemoteAddr()).hasTone = true;
-                }
-                %>
+
             }
         }
         let6.oninput = function () {
@@ -233,12 +205,7 @@
                 document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
             if (currentTune == 0){
-                <%
-                if (!Data.getInstance().getUser(request.getRemoteAddr()).hasTone){
-                    Data.getInstance().getUser(request.getRemoteAddr()).setCoins( Data.getInstance().getUser(request.getRemoteAddr()).getCoins() + 15);
-                    Data.getInstance().getUser(request.getRemoteAddr()).hasTone = true;
-                }
-                %>
+
             }
         }
         let7.oninput = function () {
@@ -260,12 +227,7 @@
                 document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
             if (currentTune == 0){
-                <%
-                if (!Data.getInstance().getUser(request.getRemoteAddr()).hasTone){
-                    Data.getInstance().getUser(request.getRemoteAddr()).setCoins( Data.getInstance().getUser(request.getRemoteAddr()).getCoins() + 15);
-                    Data.getInstance().getUser(request.getRemoteAddr()).hasTone = true;
-                }
-                %>
+
             }
         }
         let8.oninput = function () {
@@ -287,12 +249,7 @@
                 document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
             if (currentTune == 0){
-                <%
-                if (!Data.getInstance().getUser(request.getRemoteAddr()).hasTone){
-                    Data.getInstance().getUser(request.getRemoteAddr()).setCoins( Data.getInstance().getUser(request.getRemoteAddr()).getCoins() + 15);
-                    Data.getInstance().getUser(request.getRemoteAddr()).hasTone = true;
-                }
-                %>
+
             }
         }
         let9.oninput = function () {
@@ -314,12 +271,7 @@
                 document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
             if (currentTune == 0){
-                <%
-                if (!Data.getInstance().getUser(request.getRemoteAddr()).hasTone){
-                    Data.getInstance().getUser(request.getRemoteAddr()).setCoins( Data.getInstance().getUser(request.getRemoteAddr()).getCoins() + 15);
-                    Data.getInstance().getUser(request.getRemoteAddr()).hasTone = true;
-                }
-                %>
+
             }
         }
         let10.oninput = function () {
@@ -341,12 +293,7 @@
                 document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
             if (currentTune == 0){
-                <%
-                if (!Data.getInstance().getUser(request.getRemoteAddr()).hasTone){
-                    Data.getInstance().getUser(request.getRemoteAddr()).setCoins( Data.getInstance().getUser(request.getRemoteAddr()).getCoins() + 15);
-                    Data.getInstance().getUser(request.getRemoteAddr()).hasTone = true;
-                }
-                %>
+
             }
         }
         let11.oninput = function () {
@@ -368,12 +315,7 @@
                 document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
             if (currentTune == 0){
-                <%
-                if (!Data.getInstance().getUser(request.getRemoteAddr()).hasTone){
-                    Data.getInstance().getUser(request.getRemoteAddr()).setCoins( Data.getInstance().getUser(request.getRemoteAddr()).getCoins() + 15);
-                    Data.getInstance().getUser(request.getRemoteAddr()).hasTone = true;
-                }
-                %>
+
             }
         }
 
@@ -396,12 +338,7 @@
                 document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
             if (currentCompozer == 0){
-                <%
-                if (!Data.getInstance().getUser(request.getRemoteAddr()).hasComposer){
-                    Data.getInstance().getUser(request.getRemoteAddr()).setCoins( Data.getInstance().getUser(request.getRemoteAddr()).getCoins() + 15);
-                    Data.getInstance().getUser(request.getRemoteAddr()).hasComposer = true;
-                }
-                %>
+
             }
         }
         let13.oninput = function () {
@@ -423,12 +360,7 @@
                 document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
             if (currentCompozer == 0){
-                <%
-                if (!Data.getInstance().getUser(request.getRemoteAddr()).hasComposer){
-                    Data.getInstance().getUser(request.getRemoteAddr()).setCoins( Data.getInstance().getUser(request.getRemoteAddr()).getCoins() + 15);
-                    Data.getInstance().getUser(request.getRemoteAddr()).hasComposer = true;
-                }
-                %>
+
             }
         }
         let14.oninput = function () {
@@ -450,12 +382,7 @@
                 document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
             if (currentCompozer == 0){
-                <%
-                if (!Data.getInstance().getUser(request.getRemoteAddr()).hasComposer){
-                    Data.getInstance().getUser(request.getRemoteAddr()).setCoins( Data.getInstance().getUser(request.getRemoteAddr()).getCoins() + 15);
-                    Data.getInstance().getUser(request.getRemoteAddr()).hasComposer = true;
-                }
-                %>
+
             }
         }
         let15.oninput = function () {
@@ -476,12 +403,7 @@
                 document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
             if (currentCompozer == 0){
-                <%
-                if (!Data.getInstance().getUser(request.getRemoteAddr()).hasComposer){
-                    Data.getInstance().getUser(request.getRemoteAddr()).setCoins( Data.getInstance().getUser(request.getRemoteAddr()).getCoins() + 15);
-                    Data.getInstance().getUser(request.getRemoteAddr()).hasComposer = true;
-                }
-                %>
+
             }
         }
         let16.oninput = function () {
@@ -503,12 +425,7 @@
                 document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
             if (currentCompozer == 0){
-                <%
-                if (!Data.getInstance().getUser(request.getRemoteAddr()).hasComposer){
-                    Data.getInstance().getUser(request.getRemoteAddr()).setCoins( Data.getInstance().getUser(request.getRemoteAddr()).getCoins() + 15);
-                    Data.getInstance().getUser(request.getRemoteAddr()).hasComposer = true;
-                }
-                %>
+
             }
         }
         let17.oninput = function () {
@@ -530,12 +447,7 @@
                 document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
             if (currentCompozer == 0){
-                <%
-                if (!Data.getInstance().getUser(request.getRemoteAddr()).hasComposer){
-                    Data.getInstance().getUser(request.getRemoteAddr()).setCoins( Data.getInstance().getUser(request.getRemoteAddr()).getCoins() + 15);
-                    Data.getInstance().getUser(request.getRemoteAddr()).hasComposer = true;
-                }
-                %>
+
             }
         }
         let18.oninput = function () {
@@ -557,12 +469,7 @@
                 document.getElementById('result').innerHTML = "<a href=/"/"> Success </a>";
 
             if (currentCompozer == 0){
-                <%
-                if (!Data.getInstance().getUser(request.getRemoteAddr()).hasComposer){
-                    Data.getInstance().getUser(request.getRemoteAddr()).setCoins( Data.getInstance().getUser(request.getRemoteAddr()).getCoins() + 15);
-                    Data.getInstance().getUser(request.getRemoteAddr()).hasComposer = true;
-                }
-                %>
+
             }
         }
 
