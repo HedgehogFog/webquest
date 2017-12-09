@@ -46,7 +46,7 @@ h1{
     float: left;
     font-family: pixelFont;
     color: #FFFFFF;
-    font-size: 25pt;
+    font-size: 20pt;
     text-decoration: underline;
 }
 /* Classic mode*/
@@ -71,7 +71,7 @@ h1{
 .classicmode{
     margin: auto;
     margin-top: 5%;
-    width: 80%;
+    width: 100%;
     height: 80%;
     font-family: pixelFont;
     color: #FFFFFF;
@@ -93,7 +93,7 @@ h1{
 }
 .classicmodetunetext2{
     text-align: center;
-    margin-top: 13%;
+    margin-top: 10%;
 }
 .classicmodelinks{
     text-decoration: underline;
@@ -101,11 +101,11 @@ h1{
 .classicmodetuned{
     text-align: center;}
 .classicmodeguesstablepos{
-    margin-top: 4%;
+    margin-top: 3%;
     text-align: center;
 }
 .classicmodeguesstablepos2{
-    margin-top: 4%;
+    margin-top: 3%;
     text-align: center;
 }
 .guesstable{
@@ -135,7 +135,7 @@ h1{
 /* /*Picture Mode*/
 .picturemode {
     margin: auto;
-    width: 80%;
+    width: 100%;
     height: 80%;
     font-family: pixelFont;
     color: #FFFFFF;
@@ -163,6 +163,32 @@ h1{
     text-align: center;
     font-size: 14pt;
 }
+/*Universal Stuff*/
+#classicmodegreylinks{
+     text-align: center;
+     font-size: 14pt;
+     color: #808080;
+     text-decoration: underline;
+ }
+#classicmodegreyjoke{
+    text-align: center;
+    font-size: 14pt;
+    color: #A9A9A9;
+}
+.ptextcude {
+    text-align: center;
+    font-size: 14pt;
+    line-height: 0.5;
+}
+#QuestionFonts{
+font-size: 15pt;
+text-align: center;
+}
+#QuestionQuate{
+    text-align: center;
+    font-size: 18pt;
+    color: #808080;
+}
 /*Center text*/
 .texmaintzag{
     font-family: pixelFont;
@@ -187,6 +213,7 @@ table {
     padding: 0;
     margin: 4% auto auto;
 }
+
 td {
     padding: 1px; /* Поля вокруг текста */
     border: 0; /* Граница вокруг ячеек */
