@@ -54,7 +54,7 @@
     </div>
     <br>
     <span id="result" class="result"></span><br>
-    <a id="nextLevel" class="result2"></a>
+    <a id="nextLevel" class="resultA" style="color: aqua"></a>
 
     <script>
         var wordKnow = false;
