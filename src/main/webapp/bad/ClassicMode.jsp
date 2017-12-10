@@ -3,7 +3,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Find Out Everythin</title>
+    <title>Find Out Everything</title>
     <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 <body>
@@ -11,13 +11,13 @@
     <div class="classicmodebitgallery">
         <div class="bitokpos"><p
                 class="bitoktext">
-            <img src="img/bit.png"></p></div>
+            <img src="../img/bit.png"></p></div>
     </div>
     <div class="classicmodetune">
         <div class="classicmodetunetext" style="align-content: center   "><p> Great! Guess that
-            tune</a> <img width="110px" height="110px" src="img/sha.jpg"></p></div>
+            tune</a> <img width="110px" height="110px" src="../img/sha.jpg"></p></div>
         <div class="classicmodetuned">
-            <audio src="mel/1.mp3" controls></audio>
+            <audio src="../mel/1.mp3" controls></audio>
         </div>
         <div class="classicmodeguesstablepos">
             <form>
@@ -38,7 +38,7 @@
         </div>
     </div>
     <div class="classicmodecomposer">
-        <div class="classicmodetunetext2"><p><a class="classicmodelinks" href="indev.html">Guess composer</a></p></div>
+        <div class="classicmodetunetext2"><p><a class="classicmodelinks" href="../indev.html">Guess composer</a></p></div>
         <div class="classicmodeguesstablepos2">
             <form>
                 <input maxlength="1" class="guesstable" id="letter12">
