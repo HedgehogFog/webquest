@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>What is here?</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="picturemode">
+    <div class="classicmodetunetext"> PICTURE MODE</div>
+    <div class="framediv"><iframe name="littleframebuddy"  class="framy" src="img\original.jpg"></iframe></div>
+    <div class="frameworklinks">
+        <p id="classicmodegreylinks" >Show a letter <img src="img/icubsaddy.png"></p>
+        <p><a class="classicmodelinks"  href="SideQuestLife.html" target="littleframebuddy">Quality ++</a> <nobr id="classicmodegreyjoke"> FOOL HD</nobr>   </p>
+    </div>
+    <div class="picturemodzag">What do you see?</div>
+    <div class="picturemodeguesstableposs">
+        <form>
+            <input maxlength="1" class="guesstable" id="letter1">
+            <input maxlength="1" class="guesstable" id="letter2">
+            <input maxlength="1" class="guesstable" id="letter3">
+            <input maxlength="1" class="guesstable" id="letter4">
+            <input maxlength="1" class="guesstable" id="letter5">
+            <input maxlength="1" class="guesstable" id="letter6">
+
+        </form>
+    </div>
+</div>
+</body>
+</html>
