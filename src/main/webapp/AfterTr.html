@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Welcome Home</title>
+    <title>The end exists?</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <div class="picturemode">
     <div class="classicmodetunetext"> PICTURE MODE</div>
-    <div class="framediv"><iframe name="littleframebuddy" scrolling="no" class="framy" src="img\Tr1.jpg"></iframe></div>
+    <div class="framediv"><iframe name="littleframebuddy" scrolling="no" class="framy" src="img\After1.png"></iframe></div>
     <div class="frameworklinks">
-        <p><a class="classicmodelinks" href="TrStateLetterWay.html"  >Show a letter</a> <img src="img/icub.jpg">  </p>
-        <p><a class="classicmodelinks" href="TrStatePicturedWay.html">Quality +</a> <nobr id="classicmodegreyjoke"> Cool </nobr> </p>
+        <p><a class="classicmodelinks" href="AfterTrLetterWay.html"  >Show a letter</a> <img src="img/icub.jpg">  </p>
+        <p><a class="classicmodelinks" href="AfterTrPicturedWay.html">Quality -</a> <nobr id="classicmodegreyjoke"> Perfect one </nobr> </p>
     </div>
     <div class="picturemodzag">What do you see?</div>
     <div class="picturemodeguesstableposs">
@@ -41,10 +41,10 @@
 
     function successfully() {
         wordKnow = true;
-        document.getElementById('result').innerHTML = "Winter Is Coming";
+        document.getElementById('result').innerHTML = "Congratulation to you! You know something";
         var a = document.getElementById('nextLevel');
         a.textContent = "Next";
-        a.href = "AfterTr.html"
+        a.href = "indev.html"
     }
 
     function checkLet(letter, symbol) {
@@ -72,23 +72,23 @@
     }
 
     let1.oninput = function() {
-        checkLet(let1, "W");
+        checkLet(let1, "S");
     }
     let2.oninput = function () {
-        checkLet(let2, "I");
+        checkLet(let2, "P");
     }
     let3.oninput = function () {
-        checkLet(let3, "N");
+        checkLet(let3, "R");
     }
     let4.oninput = function () {
-        checkLet(let4, "T");
+        checkLet(let4, "I");
     }
 
     let5.oninput = function () {
-        checkLet(let5, "E");
+        checkLet(let5, "N");
     }
     let6.oninput = function () {
-        checkLet(let6, "R");
+        checkLet(let6, "G");
     }
 
 </script>
