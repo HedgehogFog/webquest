@@ -75,7 +75,7 @@
             document.getElementById('result').innerHTML = "The Best Of The Best Mind!";
             var a = document.getElementById('nextLevel');
             a.textContent = "Next";
-            a.href = "../Picturemode.html"
+            a.href = "../Win.html"
         }
 
         function checkLet(letter, symbol) {
