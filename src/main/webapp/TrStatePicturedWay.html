@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome Home</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="picturemode">
+    <div class="classicmodetunetext"> PICTURE MODE</div>
+    <div class="framediv"><iframe name="littleframebuddy"  class="framy" src="img\Tr2.jpg"></iframe></div>
+    <div class="frameworklinks">
+        <p id="classicmodegreylinks" >Show a letter <img src="img/icubsaddy.png"></p>
+        <p><a class="classicmodelinks" href="TrStateSideQuest.html" target="littleframebuddy">Quality ++</a> <nobr id="classicmodegreyjoke"> 2K</nobr>   </p>
+    </div>
+    <div class="picturemodzag">What do you see?</div>
+    <div class="picturemodeguesstableposs">
+        <form>
+            <input maxlength="1" class="guesstable" id="letter1">
+            <input maxlength="1" class="guesstable" id="letter2">
+            <input maxlength="1" class="guesstable" id="letter3">
+            <input maxlength="1" class="guesstable" id="letter4">
+            <input maxlength="1" class="guesstable" id="letter5">
+            <input maxlength="1" class="guesstable" id="letter6">
+
+        </form>
+    </div>
+</div>
+<span id="result" class="result"></span><br>
+<a id="nextLevel" class="resultA" style="color: aqua"></a>
+
+
+<script>
+    var wordKnow = false;
+    var current = 6;
+    // var currentTune = 11;
+    // var currentCompozer = 7;
+
+    var let1 = document.getElementById("letter1");var let2 = document.getElementById("letter2"); var let3 = document.getElementById("letter3");
+    var let4 = document.getElementById("letter4");var let5 = document.getElementById("letter5"); var let6 = document.getElementById("letter6");
+
+
+    function successfully() {
+        wordKnow = true;
+        document.getElementById('result').innerHTML = "Winter Is Coming";
+        var a = document.getElementById('nextLevel');
+        a.textContent = "Next";
+        a.href = "indev.html"
+    }
+
+    function checkLet(letter, symbol) {
+        if (!wordKnow){
+            current--;
+
+            if (letter.value.toUpperCase() != symbol && letter.value != "") {
+                document.getElementById('result').innerHTML = "Error";
+                var audio = new Audio();
+                audio.src = "audio/Chomp.wav"
+                audio.play();
+                current++;
+            } else if (letter.value == ""){
+                current++;
+                document.getElementById('result').innerHTML = "";
+            } else {
+                // currentTune--;
+                document.getElementById('result').innerHTML = "";
+            }
+
+            if (current == 0)
+                successfully();
+
+        }
+    }
+
+    let1.oninput = function() {
+        checkLet(let1, "W");
+    }
+    let2.oninput = function () {
+        checkLet(let2, "I");
+    }
+    let3.oninput = function () {
+        checkLet(let3, "N");
+    }
+    let4.oninput = function () {
+        checkLet(let4, "T");
+    }
+
+    let5.oninput = function () {
+        checkLet(let5, "E");
+    }
+    let6.oninput = function () {
+        checkLet(let6, "R");
+    }
+
+</script>
+</body>
+</html>

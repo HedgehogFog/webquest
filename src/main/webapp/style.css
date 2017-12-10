@@ -165,11 +165,11 @@ h1{
 }
 /*Universal Stuff*/
 #classicmodegreylinks{
-     text-align: center;
-     font-size: 14pt;
-     color: #808080;
-     text-decoration: underline;
- }
+    text-align: center;
+    font-size: 14pt;
+    color: #808080;
+    text-decoration: underline;
+}
 #classicmodegreyjoke{
     text-align: center;
     font-size: 14pt;
@@ -181,8 +181,8 @@ h1{
     line-height: 0.5;
 }
 #QuestionFonts{
-font-size: 15pt;
-text-align: center;
+    font-size: 15pt;
+    text-align: center;
 }
 #QuestionQuate{
     text-align: center;
@@ -216,6 +216,16 @@ text-align: center;
     font-size: 30pt;
     text-transform: uppercase;
 }
+/*Index stuff*/
+table {
+    /* Выравниваем таблицу по центру окна  */
+    border: 0; /* Рамка вокруг таблицы */
+    border-collapse: separate; /* Способ отображения границы */
+    /* Ширина таблицы */
+    border-spacing: 0;
+    padding: 0;
+    margin: 4% auto auto;
+}
 
 .result{
     color: #EAEAEA;
@@ -227,16 +237,6 @@ text-align: center;
     color: aqua;
     font-size: 30pt;
     font-family: pixelFont;
-}
-/*Index stuff*/
-table {
-     /* Выравниваем таблицу по центру окна  */
-    border: 0; /* Рамка вокруг таблицы */
-    border-collapse: separate; /* Способ отображения границы */
-    /* Ширина таблицы */
-    border-spacing: 0;
-    padding: 0;
-    margin: 4% auto auto;
 }
 
 td {
