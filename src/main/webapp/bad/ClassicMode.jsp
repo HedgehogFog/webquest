@@ -75,7 +75,7 @@
             document.getElementById('result').innerHTML = "The Best Of The Best Mind!";
             var a = document.getElementById('nextLevel');
             a.textContent = "Next";
-            a.href = "Picturemode.html"
+            a.href = "../Picturemode.html"
         }
 
         function checkLet(letter, symbol) {
@@ -85,7 +85,7 @@
                 if (letter.value.toUpperCase() != symbol && letter.value != "") {
                     document.getElementById('result').innerHTML = "Error";
                     var audio = new Audio();
-                    audio.src = "audio/Chomp.wav"
+                    audio.src = "../audio/Chomp.wav"
                     audio.play();
                     current++;
                 } else if (letter.value == ""){
