@@ -16,12 +16,12 @@
     <div class="picturemodzag">What do you see?</div>
     <div class="picturemodeguesstableposs">
         <form>
-            <input maxlength="1" class="guesstable" id="letter1">
-            <input maxlength="1" class="guesstable" id="letter2">
-            <input maxlength="1" class="guesstable" id="letter3">
-            <input maxlength="1" class="guesstable" id="letter4">
-            <input maxlength="1" class="guesstable" id="letter5">
-            <input maxlength="1" class="guesstable" id="letter6">
+            <input maxlength="1" class="guesstable" >
+            <input maxlength="1" class="guesstable" >
+            <input maxlength="1" class="guesstable" >
+            <input maxlength="1" class="guesstable" >
+            <input maxlength="1" class="guesstable" >
+            <input maxlength="1" class="guesstable" >
 
         </form>
     </div>
