@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Find Out Everythin</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 <body>
 <div class="classicmode">
