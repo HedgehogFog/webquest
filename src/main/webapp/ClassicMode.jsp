@@ -84,39 +84,57 @@
                 if (key == 8 || key == 46) {
                     if (document.activeElement == let1){
                         let1.focus();
+                        let1.value = "";
                     } else if (document.activeElement == let2){
+                        let2.value = "";
                         let1.focus();
                     } else if (document.activeElement == let3){
+                        let3.value = "";
                         let2.focus();
                     } else if (document.activeElement == let4){
+                        let4.value = "";
                         let3.focus();
                     }else if (document.activeElement == let5){
+                        let5.value = "";
                         let4.focus();
                     }else if (document.activeElement == let6){
+                        let6.value = "";
                         let5.focus();
                     }else if (document.activeElement == let7){
+                        let7.value = "";
                         let6.focus();
                     }else if (document.activeElement == let8){
+                        let8.value = "";
                         let7.focus();
                     }else if (document.activeElement == let9){
+                        let9.value = "";
                         let8.focus();
                     }else if (document.activeElement == let10){
+                        let10.value = "";
                         let9.focus();
                     }else if (document.activeElement == let11){
+                        let11.value = "";
                         let10.focus();
                     }else if (document.activeElement == let12){
+                        let12.value = "";
                         let11.focus();
                     }else if (document.activeElement == let13){
+                        let13.value = "";
                         let12.focus();
                     }else if (document.activeElement == let14){
+                        let14.value = "";
                         let13.focus();
                     }else if (document.activeElement == let15){
+                        let15.value = "";
                         let14.focus();
                     }else if (document.activeElement == let16){
+                        let16.value = "";
                         let15.focus();
                     }else if (document.activeElement == let17){
+                        let17.value = "";
                         let16.focus();
                     }else if (document.activeElement == let18){
+                        let18.value = "";
                         let17.focus();
                     }
                 }
