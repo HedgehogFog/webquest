@@ -95,7 +95,7 @@
                     current++;
                     document.getElementById('result').innerHTML = "";
                     letleft.focus();
-
+                    letle
                 } else {
                     letright.focus();
                     document.getElementById('result').innerHTML = "";
@@ -109,60 +109,114 @@
 
         let1.oninput = function() {
             checkLet(let1, "F", let1, let2);
+            if (event.KEYDOWN == 27){
+                let1.focus();
+            }
         }
 
         let2.oninput = function () {
            checkLet(let2, "O", let1, let3);
+            if (event.KEYDOWN == 27){
+                let1.focus();
+            }
         }
         let3.oninput = function () {
            checkLet(let3, "U", let2, let4);
+            if (event.KEYDOWN == 27){
+                let2.focus();
+            }
         }
         let4.oninput = function () {
            checkLet(let4, "R", let3, let5);
+            if (event.KEYDOWN == 27){
+                let3.focus();
+            }
         }
 
         let5.oninput = function () {
             checkLet(let5, "S", let4, let6);
+            if (event.KEYDOWN == 27){
+                let4.focus();
+            }
         }
         let6.oninput = function () {
             checkLet(let6, "E", let5, let7);
+            if (event.KEYDOWN == 27){
+                let5.focus();
+            }
         }
         let7.oninput = function () {
            checkLet(let7, "A", let6, let8);
+            if (event.KEYDOWN == 27){
+                let6.focus();
+            }
         }
         let8.oninput = function () {
             checkLet(let8, "S", let7, let9);
+            if (event.KEYDOWN == 27){
+                let7.focus();
+            }
         }
         let9.oninput = function () {
             checkLet(let9, "O", let8, let10);
+            if (event.KEYDOWN == 27){
+                let8.focus();
+            }
         }
         let10.oninput = function () {
            checkLet(let10, "N", let9, let11);
+            if (event.KEYDOWN == 27){
+                let9.focus();
+            }
         }
         let11.oninput = function () {
             checkLet(let11, "S", let10, let12);
+            if (event.KEYDOWN == 27){
+                let10.focus();
+            }
         }
 
         let12.oninput = function () {
             checkLet(let12, "V", let11, let13);
+            if (event.KEYDOWN == 27){
+                let11.focus();
+            }
         }
         let13.oninput = function () {
            checkLet(let13, "I", let12, let14);
+            if (event.KEYDOWN == 27){
+                let12.focus();
+            }
         }
         let14.oninput = function () {
            checkLet(let14, "V", let13, let15);
+            if (event.KEYDOWN == 27){
+                let13.focus();
+            }
         }
         let15.oninput = function () {
             checkLet(let15, "A", let14, let16);
+            if (event.KEYDOWN == 27){
+                let14.focus();
+            }
         }
         let16.oninput = function () {
            checkLet(let16, "L", let15, let17);
+            if (event.KEYDOWN == 27){
+                let15.focus();
+            }
         }
         let17.oninput = function () {
            checkLet(let17, "D", let16, let18);
+            if (event.KEYDOWN == 27){
+                let16.focus();
+            }
         }
         let18.oninput = function () {
             checkLet(let18, "I", let17, let18);
+            if (event.KEYDOWN == 27){
+                let17.focus();
+            }
         }
 
     </script>
