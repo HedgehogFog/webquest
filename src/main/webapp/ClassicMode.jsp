@@ -86,7 +86,6 @@
                 var key = event.keyCode || event.charCode;
 
                 if (key == 8 || key == 46) {
-                    var letter;
                     if (document.activeElement == let1){
                         let1.focus();
                         let1.value = "";
@@ -160,26 +159,26 @@
             if (!wordKnow){
                 current--;
 
-                // if (letter.value.toUpperCase() != symbol && letter.value != "") {
-                //     document.getElementById('result').innerHTML = "Error";
-                //     var audio = new Audio();
-                //     audio.src = "audio/Chomp.wav"
-                //     audio.play();
-                //     // letter.value = "";
-                //
-                //     current++;
-                //
-                // } else if (letter.value == ""){
-                //     current++;
-                //     document.getElementById('result').innerHTML = "";
-                //     letleft.focus();
-                // } else {
-                //     letright.focus();
-                //     document.getElementById('result').innerHTML = "";
-                // }
-                //
-                // if (current == 0)
-                //     successfully();
+                if (letter.value.toUpperCase() != symbol && letter.value != "") {
+                    document.getElementById('result').innerHTML = "Error";
+                    var audio = new Audio();
+                    audio.src = "audio/Chomp.wav"
+                    audio.play();
+                    letter.value = "";
+
+                    current++;
+
+                } else if (letter.value == ""){
+                    current++;
+                    document.getElementById('result').innerHTML = "";
+                    letleft.focus();
+                } else {
+                    letright.focus();
+                    document.getElementById('result').innerHTML = "";
+                }
+
+                if (current == 0)
+                    successfully();
 
             }
         }
