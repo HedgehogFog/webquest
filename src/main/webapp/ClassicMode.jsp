@@ -70,6 +70,21 @@
         var let13 = document.getElementById("letter13"); var let14 = document.getElementById("letter14"); var let15 = document.getElementById("letter15");
         var let16 = document.getElementById("letter16"); var let17 = document.getElementById("letter17"); var let18 = document.getElementById("letter18");
 
+        var lets = [];
+        var i;
+        for (i = 0; i < 18; i++){
+            var name = "letter" + (i + 1);
+            lets[i] =  document.getElementById(name);
+        }
+
+        for (i = 0; i < 18; i++){
+            lets[i].onkeydown = function () {
+                var key = event.keyCode || event.charCode;
+
+                if( key == 8 || key == 46 )
+                    alert("Backspace")
+            }
+        }
         function successfully() {
             wordKnow = true;
             document.getElementById('result').innerHTML = "The Best Of The Best Mind!";
