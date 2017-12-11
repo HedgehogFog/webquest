@@ -165,7 +165,6 @@
                     audio.src = "audio/Chomp.wav"
                     audio.play();
                     letter.value = "";
-
                     current++;
 
                 } else if (letter.value == ""){
