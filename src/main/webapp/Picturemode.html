@@ -88,6 +88,7 @@
         }
     }
 
+
     function successfully() {
         wordKnow = true;
         document.getElementById('result').innerHTML = "Sunbathe and Conquer!";
@@ -105,13 +106,13 @@
                 var audio = new Audio();
                 audio.src = "audio/Chomp.wav"
                 audio.play();
-                current++;
                 letter.value = "";
+                current++;
 
             } else if (letter.value == ""){
                 current++;
-                letleft.focus();
                 document.getElementById('result').innerHTML = "";
+                letleft.focus();
             } else {
                 letright.focus();
                 document.getElementById('result').innerHTML = "";
