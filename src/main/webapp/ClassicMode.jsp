@@ -82,9 +82,9 @@
                 var key = event.keyCode || event.charCode;
 
                 if (key == 8 || key == 46) {
-                    if (i == 0){
+                    if (document.activeElement == let1){
                         let1.focus();
-                    } else if (i == 17){
+                    } else if (document.activeElement == let18){
                         let18.focus();
                     } else {
                         lets[i - 1].focus();
