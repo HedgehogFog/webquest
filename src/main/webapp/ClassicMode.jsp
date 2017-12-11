@@ -82,62 +82,85 @@
                 var key = event.keyCode || event.charCode;
 
                 if (key == 8 || key == 46) {
+                    var letter;
                     if (document.activeElement == let1){
                         let1.focus();
-                        // let1.value = "";
+                        let1.value = "";
+
                     } else if (document.activeElement == let2){
+                        letter = let1.value;
                         let1.focus();
-                        // let2.value = "";
+                        let2.value = "";
+                        let1.value = letter;
                     } else if (document.activeElement == let3){
+                        letter = let2.value;
                         let2.focus();
-                        // let3.value = "";
+                        let3.value = "";
                     } else if (document.activeElement == let4){
+                        letter = let3.value;
                         let3.focus();
-                        // let4.value = "";
+                        let4.value = "";
                     }else if (document.activeElement == let5){
+                        letter = let4.value;
                         let4.focus();
-                        // let5.value = "";
+                        let5.value = "";
                     }else if (document.activeElement == let6){
-                        // let6.value = "";
+                        letter = let5.value;
+                        let6.value = "";
                         let5.focus();
                     }else if (document.activeElement == let7){
-                        // let7.value = "";
+                        letter = let6.value;
+
+                        let7.value = "";
                         let6.focus();
                     }else if (document.activeElement == let8){
-                        // let8.value = "";
+                        letter = let7.value;
+                        let8.value = "";
                         let7.focus();
                     }else if (document.activeElement == let9){
-                        // let9.value = "";
+                        letter = let8.value;
+                        let9.value = "";
                         let8.focus();
                     }else if (document.activeElement == let10){
-                        // let10.value = "";
+                        letter = let9.value;
+                        let10.value = "";
                         let9.focus();
                     }else if (document.activeElement == let11){
-                        // let11.value = "";
+                        letter = let10.value;
+                        let11.value = "";
                         let10.focus();
                     }else if (document.activeElement == let12){
-                        // let12.value = "";
+                        letter = let11.value;
+                        let12.value = "";
                         let11.focus();
                     }else if (document.activeElement == let13){
-                        // let13.value = "";
+                        letter = let12.value;
+                        let13.value = "";
                         let12.focus();
                     }else if (document.activeElement == let14){
-                        // let14.value = "";
+                        letter = let13.value;
+                        let14.value = "";
                         let13.focus();
                     }else if (document.activeElement == let15){
-                        // let15.value = "";
+                        letter = let14.value;
+                        let15.value = "";
                         let14.focus();
                     }else if (document.activeElement == let16){
-                        // let16.value = "";
+                        letter = let15.value;
+                        let16.value = "";
                         let15.focus();
                     }else if (document.activeElement == let17){
-                        // let17.value = "";
+                        letter = let16.value;
+                        let17.value = "";
                         let16.focus();
                     }else if (document.activeElement == let18){
-                        // let18.value = "";
+                        letter = let17.value;
+                        let18.value = "";
                         let17.focus();
                     }
                 }
+
+                let
             }
         }
         function successfully() {
