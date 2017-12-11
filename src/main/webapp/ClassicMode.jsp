@@ -86,17 +86,17 @@
                         let1.focus();
                         let1.value = "";
                     } else if (document.activeElement == let2){
-                        let2.value = "";
                         let1.focus();
+                        let2.value = "";
                     } else if (document.activeElement == let3){
-                        let3.value = "";
                         let2.focus();
+                        let3.value = "";
                     } else if (document.activeElement == let4){
-                        let4.value = "";
                         let3.focus();
+                        let4.value = "";
                     }else if (document.activeElement == let5){
-                        let5.value = "";
                         let4.focus();
+                        let5.value = "";
                     }else if (document.activeElement == let6){
                         let6.value = "";
                         let5.focus();
