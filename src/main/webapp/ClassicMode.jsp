@@ -76,6 +76,10 @@
             var name = "letter" + (i + 1);
             lets[i] =  document.getElementById(name);
         }
+        document.onkeydown = function(e) {
+            if (e.keyCode == 8) { return false }
+        }
+
 
         for (i = 0; i < 18; i++){
             lets[i].onkeydown = function () {
@@ -86,51 +90,37 @@
                     if (document.activeElement == let1){
                         let1.focus();
                         let1.value = "";
-
                     } else if (document.activeElement == let2){
-                        letter = let1.value;
                         let1.focus();
                         let2.value = "";
-                        let1.value = letter;
                     } else if (document.activeElement == let3){
-                        letter = let2.value;
                         let2.focus();
                         let3.value = "";
                     } else if (document.activeElement == let4){
-                        letter = let3.value;
                         let3.focus();
                         let4.value = "";
                     }else if (document.activeElement == let5){
-                        letter = let4.value;
                         let4.focus();
                         let5.value = "";
                     }else if (document.activeElement == let6){
-                        letter = let5.value;
                         let6.value = "";
                         let5.focus();
                     }else if (document.activeElement == let7){
-                        letter = let6.value;
-
                         let7.value = "";
                         let6.focus();
                     }else if (document.activeElement == let8){
-                        letter = let7.value;
                         let8.value = "";
                         let7.focus();
                     }else if (document.activeElement == let9){
-                        letter = let8.value;
                         let9.value = "";
                         let8.focus();
                     }else if (document.activeElement == let10){
-                        letter = let9.value;
                         let10.value = "";
                         let9.focus();
                     }else if (document.activeElement == let11){
-                        letter = let10.value;
                         let11.value = "";
                         let10.focus();
                     }else if (document.activeElement == let12){
-                        letter = let11.value;
                         let12.value = "";
                         let11.focus();
                     }else if (document.activeElement == let13){
@@ -138,29 +128,24 @@
                         let13.value = "";
                         let12.focus();
                     }else if (document.activeElement == let14){
-                        letter = let13.value;
                         let14.value = "";
                         let13.focus();
                     }else if (document.activeElement == let15){
-                        letter = let14.value;
                         let15.value = "";
                         let14.focus();
                     }else if (document.activeElement == let16){
-                        letter = let15.value;
                         let16.value = "";
                         let15.focus();
                     }else if (document.activeElement == let17){
-                        letter = let16.value;
                         let17.value = "";
                         let16.focus();
                     }else if (document.activeElement == let18){
-                        letter = let17.value;
                         let18.value = "";
                         let17.focus();
                     }
+                    return false;
                 }
 
-                let
             }
         }
         function successfully() {
