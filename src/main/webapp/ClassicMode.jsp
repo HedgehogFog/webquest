@@ -78,7 +78,7 @@
             a.href = "Picturemode.html"
         }
 
-        function checkLet(letter, symbol) {
+        function checkLet(letter, symbol, letleft, letright) {
             if (!wordKnow){
                 current--;
 
@@ -87,12 +87,17 @@
                     var audio = new Audio();
                     audio.src = "audio/Chomp.wav"
                     audio.play();
+                    letter.value = "";
+
                     current++;
+
                 } else if (letter.value == ""){
                     current++;
                     document.getElementById('result').innerHTML = "";
+                    letleft.focus();
+
                 } else {
-                    // currentTune--;
+                    letright.focus();
                     document.getElementById('result').innerHTML = "";
                 }
 
@@ -103,61 +108,61 @@
         }
 
         let1.oninput = function() {
-            checkLet(let1, "F");
+            checkLet(let1, "F", let1, let2);
         }
 
         let2.oninput = function () {
-           checkLet(let2, "O");
+           checkLet(let2, "O", let1, let3);
         }
         let3.oninput = function () {
-           checkLet(let3, "U");
+           checkLet(let3, "U", let2, let4);
         }
         let4.oninput = function () {
-           checkLet(let4, "R");
+           checkLet(let4, "R", let3, let5);
         }
 
         let5.oninput = function () {
-            checkLet(let5, "S");
+            checkLet(let5, "S", let4, let6);
         }
         let6.oninput = function () {
-            checkLet(let6, "E");
+            checkLet(let6, "E", let5, let7);
         }
         let7.oninput = function () {
-           checkLet(let7, "A");
+           checkLet(let7, "A", let6, let8);
         }
         let8.oninput = function () {
-            checkLet(let8, "S");
+            checkLet(let8, "S", let7, let9);
         }
         let9.oninput = function () {
-            checkLet(let9, "O");
+            checkLet(let9, "O", let8, let10);
         }
         let10.oninput = function () {
-           checkLet(let10, "N");
+           checkLet(let10, "N", let9, let11);
         }
         let11.oninput = function () {
-            checkLet(let11, "S");
+            checkLet(let11, "S", let10, let12);
         }
 
         let12.oninput = function () {
-            checkLet(let12, "V");
+            checkLet(let12, "V", let11, let13);
         }
         let13.oninput = function () {
-           checkLet(let13, "I");
+           checkLet(let13, "I", let12, let14);
         }
         let14.oninput = function () {
-           checkLet(let14, "V");
+           checkLet(let14, "V", let13, let15);
         }
         let15.oninput = function () {
-            checkLet(let15, "A");
+            checkLet(let15, "A", let14, let16);
         }
         let16.oninput = function () {
-           checkLet(let16, "L");
+           checkLet(let16, "L", let15, let17);
         }
         let17.oninput = function () {
-           checkLet(let17, "D");
+           checkLet(let17, "D", let16, let18);
         }
         let18.oninput = function () {
-            checkLet(let18, "I");
+            checkLet(let18, "I", let17, let18);
         }
 
     </script>
