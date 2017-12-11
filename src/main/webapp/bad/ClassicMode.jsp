@@ -70,29 +70,110 @@
         var let13 = document.getElementById("letter13"); var let14 = document.getElementById("letter14"); var let15 = document.getElementById("letter15");
         var let16 = document.getElementById("letter16"); var let17 = document.getElementById("letter17"); var let18 = document.getElementById("letter18");
 
+        var lets = [];
+        var i;
+        for (i = 0; i < 18; i++){
+            var name = "letter" + (i + 1);
+            lets[i] =  document.getElementById(name);
+        }
+        document.onkeydown = function(e) {
+            if (e.keyCode == 8) { return false }
+        }
+
+
+        for (i = 0; i < 18; i++){
+            lets[i].onkeydown = function () {
+                var key = event.keyCode || event.charCode;
+
+                if (key == 8 || key == 46) {
+                    if (document.activeElement == let1){
+                        let1.focus();
+                        let1.value = "";
+                    } else if (document.activeElement == let2){
+                        let1.focus();
+                        let2.value = "";
+                    } else if (document.activeElement == let3){
+                        let2.focus();
+                        let3.value = "";
+                    } else if (document.activeElement == let4){
+                        let3.focus();
+                        let4.value = "";
+                    }else if (document.activeElement == let5){
+                        let4.focus();
+                        let5.value = "";
+                    }else if (document.activeElement == let6){
+                        let6.value = "";
+                        let5.focus();
+                    }else if (document.activeElement == let7){
+                        let7.value = "";
+                        let6.focus();
+                    }else if (document.activeElement == let8){
+                        let8.value = "";
+                        let7.focus();
+                    }else if (document.activeElement == let9){
+                        let9.value = "";
+                        let8.focus();
+                    }else if (document.activeElement == let10){
+                        let10.value = "";
+                        let9.focus();
+                    }else if (document.activeElement == let11){
+                        let11.value = "";
+                        let10.focus();
+                    }else if (document.activeElement == let12){
+                        let12.value = "";
+                        let11.focus();
+                    }else if (document.activeElement == let13){
+                        letter = let12.value;
+                        let13.value = "";
+                        let12.focus();
+                    }else if (document.activeElement == let14){
+                        let14.value = "";
+                        let13.focus();
+                    }else if (document.activeElement == let15){
+                        let15.value = "";
+                        let14.focus();
+                    }else if (document.activeElement == let16){
+                        let16.value = "";
+                        let15.focus();
+                    }else if (document.activeElement == let17){
+                        let17.value = "";
+                        let16.focus();
+                    }else if (document.activeElement == let18){
+                        let18.value = "";
+                        let17.focus();
+                    }
+                    return false;
+                }
+
+            }
+        }
         function successfully() {
             wordKnow = true;
             document.getElementById('result').innerHTML = "The Best Of The Best Mind!";
             var a = document.getElementById('nextLevel');
             a.textContent = "Next";
-            a.href = "../Win.html"
+            a.href = "Win.html"
         }
 
-        function checkLet(letter, symbol) {
+        function checkLet(letter, symbol, letleft, letright) {
             if (!wordKnow){
                 current--;
 
                 if (letter.value.toUpperCase() != symbol && letter.value != "") {
                     document.getElementById('result').innerHTML = "Error";
                     var audio = new Audio();
-                    audio.src = "../audio/Chomp.wav"
+                    audio.src = "audio/Chomp.wav"
                     audio.play();
+                    letter.value = "";
+
                     current++;
+
                 } else if (letter.value == ""){
                     current++;
                     document.getElementById('result').innerHTML = "";
+                    letleft.focus();
                 } else {
-                    // currentTune--;
+                    letright.focus();
                     document.getElementById('result').innerHTML = "";
                 }
 
@@ -103,61 +184,61 @@
         }
 
         let1.oninput = function() {
-            checkLet(let1, "F");
+            checkLet(let1, "F", let1, let2);
         }
 
         let2.oninput = function () {
-           checkLet(let2, "O");
+            checkLet(let2, "O", let1, let3);
         }
         let3.oninput = function () {
-           checkLet(let3, "U");
+            checkLet(let3, "U", let2, let4);
         }
         let4.oninput = function () {
-           checkLet(let4, "R");
+            checkLet(let4, "R", let3, let5);
         }
 
         let5.oninput = function () {
-            checkLet(let5, "S");
+            checkLet(let5, "S", let4, let6);
         }
         let6.oninput = function () {
-            checkLet(let6, "E");
+            checkLet(let6, "E", let5, let7);
         }
         let7.oninput = function () {
-           checkLet(let7, "A");
+            checkLet(let7, "A", let6, let8);
         }
         let8.oninput = function () {
-            checkLet(let8, "S");
+            checkLet(let8, "S", let7, let9);
         }
         let9.oninput = function () {
-            checkLet(let9, "O");
+            checkLet(let9, "O", let8, let10);
         }
         let10.oninput = function () {
-           checkLet(let10, "N");
+            checkLet(let10, "N", let9, let11);
         }
         let11.oninput = function () {
-            checkLet(let11, "S");
+            checkLet(let11, "S", let10, let12);
         }
 
         let12.oninput = function () {
-            checkLet(let12, "V");
+            checkLet(let12, "V", let11, let13);
         }
         let13.oninput = function () {
-           checkLet(let13, "I");
+            checkLet(let13, "I", let12, let14);
         }
         let14.oninput = function () {
-           checkLet(let14, "V");
+            checkLet(let14, "V", let13, let15);
         }
         let15.oninput = function () {
-            checkLet(let15, "A");
+            checkLet(let15, "A", let14, let16);
         }
         let16.oninput = function () {
-           checkLet(let16, "L");
+            checkLet(let16, "L", let15, let17);
         }
         let17.oninput = function () {
-           checkLet(let17, "D");
+            checkLet(let17, "D", let16, let18);
         }
         let18.oninput = function () {
-            checkLet(let18, "I");
+            checkLet(let18, "I", let17, let18);
         }
 
     </script>

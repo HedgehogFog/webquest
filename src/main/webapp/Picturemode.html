@@ -40,6 +40,53 @@
     var let1 = document.getElementById("letter1");var let2 = document.getElementById("letter2"); var let3 = document.getElementById("letter3");
     var let4 = document.getElementById("letter4");var let5 = document.getElementById("letter5"); var let6 = document.getElementById("letter6");
 
+    var lets = [];
+    var i;
+    for (i = 0; i < 6; i++){
+        var name = "letter" + (i + 1);
+        lets[i] =  document.getElementById(name);
+    }
+
+    document.onkeydown = function(e) {
+        if (e.keyCode == 8) { return false }
+    }
+
+
+    for (i = 0; i < 18; i++){
+        lets[i].onkeydown = function () {
+            var key = event.keyCode || event.charCode;
+
+            if (key == 8 || key == 46) {
+                if (document.activeElement == let1){
+                    let1.focus();
+                    let1.value = "";
+                } else if (document.activeElement == let2){
+                    let1.focus();
+                    let2.value = "";
+                } else if (document.activeElement == let3){
+                    let2.focus();
+                    let3.value = "";
+                } else if (document.activeElement == let4){
+                    let3.focus();
+                    let4.value = "";
+                }else if (document.activeElement == let5){
+                    let4.focus();
+                    let5.value = "";
+                }else if (document.activeElement == let6){
+                    let6.value = "";
+                    let5.focus();
+                }else if (document.activeElement == let7){
+                    let7.value = "";
+                    let6.focus();
+                }else if (document.activeElement == let8){
+                    let8.value = "";
+                    let7.focus();
+                }
+                return false;
+            }
+
+        }
+    }
 
     function successfully() {
         wordKnow = true;
@@ -49,7 +96,7 @@
         a.href = "Omsk.html"
     }
 
-    function checkLet(letter, symbol) {
+    function checkLet(letter, symbol, letleft, letright) {
         if (!wordKnow){
             current--;
 
@@ -59,11 +106,14 @@
                 audio.src = "audio/Chomp.wav"
                 audio.play();
                 current++;
+                letter.value = "";
+
             } else if (letter.value == ""){
                 current++;
+                letleft.focus();
                 document.getElementById('result').innerHTML = "";
             } else {
-                // currentTune--;
+                letright.focus();
                 document.getElementById('result').innerHTML = "";
             }
 
@@ -74,23 +124,23 @@
     }
 
     let1.oninput = function() {
-        checkLet(let1, "S");
+        checkLet(let1, "S", let1, let2);
     }
     let2.oninput = function () {
-        checkLet(let2, "U");
+        checkLet(let2, "U", let1, let3);
     }
     let3.oninput = function () {
-        checkLet(let3, "M");
+        checkLet(let3, "M", let2, let4);
     }
     let4.oninput = function () {
-        checkLet(let4, "M");
+        checkLet(let4, "M", let3, let5);
     }
 
     let5.oninput = function () {
-        checkLet(let5, "E");
+        checkLet(let5, "E", let4, let6);
     }
     let6.oninput = function () {
-        checkLet(let6, "R");
+        checkLet(let6, "R", let5, let6);
     }
 
 </script>
