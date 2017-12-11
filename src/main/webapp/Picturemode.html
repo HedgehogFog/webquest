@@ -40,6 +40,46 @@
     var let1 = document.getElementById("letter1");var let2 = document.getElementById("letter2"); var let3 = document.getElementById("letter3");
     var let4 = document.getElementById("letter4");var let5 = document.getElementById("letter5"); var let6 = document.getElementById("letter6");
 
+    var lets = [];
+    var i;
+    for (i = 0; i < 18; i++){
+        var name = "letter" + (i + 1);
+        lets[i] =  document.getElementById(name);
+    }
+    document.onkeydown = function(e) {
+        if (e.keyCode == 8) { return false }
+    }
+
+
+    for (i = 0; i < 18; i++){
+        lets[i].onkeydown = function () {
+            var key = event.keyCode || event.charCode;
+
+            if (key == 8 || key == 46) {
+                if (document.activeElement == let1){
+                    let1.focus();
+                    let1.value = "";
+                } else if (document.activeElement == let2){
+                    let1.focus();
+                    let2.value = "";
+                } else if (document.activeElement == let3){
+                    let2.focus();
+                    let3.value = "";
+                } else if (document.activeElement == let4){
+                    let3.focus();
+                    let4.value = "";
+                }else if (document.activeElement == let5){
+                    let4.focus();
+                    let5.value = "";
+                }else if (document.activeElement == let6){
+                    let6.value = "";
+                    let5.focus();
+                }
+                return false;
+            }
+
+        }
+    }
 
     function successfully() {
         wordKnow = true;
