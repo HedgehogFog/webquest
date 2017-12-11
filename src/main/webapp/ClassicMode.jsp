@@ -157,7 +157,7 @@
                     var audio = new Audio();
                     audio.src = "audio/Chomp.wav"
                     audio.play();
-                    letter.value = "";
+                    // letter.value = "";
 
                     current++;
 
