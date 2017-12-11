@@ -85,39 +85,39 @@
                     if (document.activeElement == let1){
                         let1.focus();
                     } else if (document.activeElement == let2){
-                        let2.focus();
+                        let1.focus();
                     } else if (document.activeElement == let3){
-                        let3.focus();
+                        let2.focus();
                     } else if (document.activeElement == let4){
-                        let4.focus();
+                        let3.focus();
                     }else if (document.activeElement == let5){
-                        let5.focus();
+                        let4.focus();
                     }else if (document.activeElement == let6){
-                        let6.focus();
+                        let5.focus();
                     }else if (document.activeElement == let7){
-                        let7.focus();
+                        let6.focus();
                     }else if (document.activeElement == let8){
-                        let8.focus();
+                        let7.focus();
                     }else if (document.activeElement == let9){
-                        let9.focus();
+                        let8.focus();
                     }else if (document.activeElement == let10){
-                        let10.focus();
+                        let9.focus();
                     }else if (document.activeElement == let11){
-                        let11.focus();
+                        let10.focus();
                     }else if (document.activeElement == let12){
-                        let12.focus();
+                        let11.focus();
                     }else if (document.activeElement == let13){
-                        let13.focus();
+                        let12.focus();
                     }else if (document.activeElement == let14){
-                        let14.focus();
+                        let13.focus();
                     }else if (document.activeElement == let15){
-                        let15.focus();
+                        let14.focus();
                     }else if (document.activeElement == let16){
-                        let16.focus();
+                        let15.focus();
                     }else if (document.activeElement == let17){
-                        let17.focus();
+                        let16.focus();
                     }else if (document.activeElement == let18){
-                        let18.focus();
+                        let17.focus();
                     }
                 }
             }
