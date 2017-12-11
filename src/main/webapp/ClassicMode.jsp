@@ -81,8 +81,15 @@
             lets[i].onkeydown = function () {
                 var key = event.keyCode || event.charCode;
 
-                if( key == 8 || key == 46 )
-                    alert("Backspace")
+                if (key == 8 || key == 46) {
+                    if (i == 0){
+                        let1.focus();
+                    } else if (i == 17){
+                        let18.focus();
+                    } else {
+                        lets[i - 1].focus();
+                    }
+                }
             }
         }
         function successfully() {
