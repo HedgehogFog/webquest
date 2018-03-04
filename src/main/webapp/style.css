@@ -13,6 +13,35 @@ h1{
     color: #FFFFFF;
     font-size: 40pt;
 }
+.f20 {
+    font-size: 20pt;
+    margin-top: 2%;
+}
+#m8 {
+    margin-top: 8%;
+}
+.reggtable{
+    width: 250px;
+    height: 40px;
+    background-color: rgba(127,127,127,0.3);
+    border: none;
+    outline:none;
+    text-align: center;
+    font-family: pixelFont;
+    color: #FFFFFF;
+    font-size: 20pt;
+    text-transform: uppercase;
+}
+.singinsingupmainframe{
+    margin: auto;
+    font-family: pixelFont;
+    color: #FFFFFF;
+    font-size: 25pt;
+    text-align: center;
+    margin-top: 10%;
+    width: 39%;
+    height: 60%;
+}
 #nepo {
     position: fixed; /* Фиксированное положение */
     right: 0;
@@ -46,7 +75,7 @@ h1{
     float: left;
     font-family: pixelFont;
     color: #FFFFFF;
-    font-size: 20pt;
+    font-size: 25pt;
     text-decoration: underline;
 }
 /* Classic mode*/
